@@ -2,11 +2,43 @@ html, body {
   box-sizing: border-box;
 }
 
+.size1 {
+  height: 75%;
+  top: 0;
+  margin: auto auto 0 auto;
+  background-color: #B51E23;
+}
+
+.grey1 {
+  background-color: #B51E23;
+  height: 10px;
+  border: 1px #666666 solid;
+  margin: auto auto 0 auto;
+  width: 66%;
+}
+
+.grey2 {
+  background-color: #B51E23;
+  height: 10px;
+  border: 1px #666666 solid;
+  margin: auto auto 0 auto;
+  width: 66%;
+}
+
+.main_line1 {
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 49%;
+  width: 11px;
+  background-color: #B51E23;
+  border: 1px #666666 solid;
+}
+
 .container {
   display: block;
   margin: 120px auto;
   width: 350px;
-  background-color: purple;
 }
 
 .cases {
@@ -25,6 +57,20 @@ html, body {
   width: 40px;
   height: 40px;
   margin: auto;
+  cursor: pointer;
+  display: table;
+  transition: 500ms ease-in-out;
+}
+.cases .case p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cases .case:hover {
+  transform: scale(1.1);
+  border: 2px #B6DCF0 solid;
+}
+.cases .case:hover p {
+  font-weight: bold;
 }
 
 .main {
@@ -39,32 +85,63 @@ html, body {
   margin: auto;
   height: 90px;
   width: 55px;
-  border: 5px solid #B6DCF0;
+  border: 10px solid #B6DCF0;
+  border-radius: 10px 10px 20px 20px;
+  background-color: #666666;
+  position: relative;
+}
+.main__top__box .size {
+  width: 100%;
+  background-color: #B51E23;
+  bottom: 0;
+  position: absolute;
 }
 .main__content {
   display: block;
+  position: relative;
+  height: 200px;
 }
 .main__content__line {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: green;
+  justify-content: space-between;
 }
 .main__content__line .line {
-  flex: 1;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 40px;
-  background-color: red;
+  height: 15px;
+  margin: 20px auto;
+}
+.main__content__line .line .people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25%;
+  margin-right: 5px;
 }
 .main__content__line .line .people i {
-  margin-left: 10px;
+  margin-left: 0;
   color: #666666;
 }
 .main__content__line .line .grey {
-  height: 15px;
+  height: 10px;
+  background-color: #666666;
   border: 1px #666666 solid;
   margin: auto auto 0 auto;
-  width: 80%;
+  width: 66%;
+}
+.main__content__line .right {
+  flex-direction: row-reverse;
+}
+.main__content .main-line {
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 49%;
+  width: 11px;
+  background-color: #666666;
+  border: 1px #666666 solid;
 }/*# sourceMappingURL=main.css.map */

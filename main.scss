@@ -7,11 +7,51 @@ html, body{
     box-sizing: border-box;
 }
 
+.size1{
+    height: 75%;
+    top: 0;
+    margin: auto auto 0 auto;
+    background-color: $red;
+}
+
+.grey1{
+    background-color: $red;
+    height: 10px;
+    border: 1px $grey solid;
+    margin: auto auto 0 auto;
+    width: 66%;
+}
+
+.grey2{
+    background-color: $red;
+    height: 10px;
+    border: 1px $grey solid;
+    margin: auto auto 0 auto;
+    width: 66%;
+}
+
+
+
+
+
+
+
+
+
+.main_line1{
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    left: 49%;
+    width: 11px;
+    background-color: $red;
+    border: 1px $grey solid;
+}
+
 .container{
     display: block;
     margin: 120px auto;
     width: 350px;
-    background-color: purple;
 }
 
 .cases{
@@ -30,9 +70,29 @@ html, body{
         width: 40px;
         height: 40px;
         margin: auto;
+        cursor: pointer;
+        display: table;
+        transition: 500ms ease-in-out;
+
+
+        p{
+            display: table-cell;
+            vertical-align: middle;
+        }
 
     }
+
+    .case:hover{
+        transform: scale(1.1);
+        border: 2px $sky solid;
+
+        p{
+            font-weight: bold;
+        }
+    }
 }
+
+
 
 .main{
     display: block;
@@ -45,42 +105,81 @@ html, body{
             margin: auto;
             height: 90px;
             width: 55px;
-            border: 5px solid $sky;
+            border: 10px solid $sky;
+            border-radius: 10px 10px 20px 20px;
+            background-color: $grey;
+            position: relative;
+
+            .size{
+                width: 100%;
+                background-color: $red;
+                bottom: 0;
+                position: absolute;
+            }
+
+
         }
+
+
     }
 
     &__content{
         display: block;
+        position: relative;
+        height: 200px;
 
         &__line{
             display: flex;
             flex-direction: row;
             width: 100%;
-            background-color: green;;
+            justify-content: space-between;
 
             .line{
-                flex: 1;
+                width: 50%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                height: 40px;
-                background-color: red;
+                height:  15px;
+                margin: 20px auto;
 
                 .people{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 25%;
+                    margin-right:  5px ;
+
                     i{
-                        margin-left: 10px;
+                        margin-left: 0;
                         color: $grey;
                     }
                 }
 
                 .grey{
-                    height: 15px;
+                    height: 10px;
+                    background-color: $grey;
                     border: 1px $grey solid;
                     margin: auto auto 0 auto;
-                    width: 80%;
+                    width: 66%;
                 }
 
             }
+
+            .right{
+                flex-direction: row-reverse;
+            }
+        }
+
+        .main-line{
+            height: 100%;
+            bottom: 0;
+            position: absolute;
+            left: 49%;
+            width: 11px;
+            background-color: $grey;
+            border: 1px $grey solid;
+
+
         }
     }
 
