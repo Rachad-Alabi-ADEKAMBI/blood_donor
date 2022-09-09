@@ -15,6 +15,10 @@
 </head>
 <body>
     <div class="container">
+
+        <p>
+            Savez-vous à qui vous pouvez donner votre groupe sanguin?
+        </p>
         <div class="cases">
             <div class="case" id="click1" onclick="scene1()">
                 <p>O-</p>
@@ -74,7 +78,7 @@
                 <div class="main__content">
                     <div class="main__content__line">
                         <div class="line left">
-                                <div class="people">
+                                <div class="people" id="o-I">
                                     O- <i class="fas fa-user"></i>
                                 </div>
 
@@ -84,7 +88,7 @@
                         </div>
 
                         <div class="line right">
-                            <div class="people">
+                            <div class="people" id="o+I">
                                 O+ <i class="fas fa-user"></i>
                             </div>
 
@@ -96,7 +100,7 @@
 
                     <div class="main__content__line">
                         <div class="line left">
-                                <div class="people">
+                                <div class="people" id="a-I">
                                     A- <i class="fas fa-user"></i>
                                 </div>
 
@@ -106,7 +110,7 @@
                         </div>
 
                         <div class="line right">
-                            <div class="people">
+                            <div class="people" id="a+I">
                                 A+ <i class="fas fa-user"></i>
                             </div>
 
@@ -118,7 +122,7 @@
 
                     <div class="main__content__line">
                         <div class="line left">
-                                <div class="people">
+                                <div class="people" id="b-I">
                                     B- <i class="fas fa-user"></i>
                                 </div>
 
@@ -128,7 +132,7 @@
                         </div>
 
                         <div class="line right">
-                            <div class="people">
+                            <div class="people" id="b+I">
                                 B+ <i class="fas fa-user"></i>
                             </div>
 
@@ -140,7 +144,7 @@
 
                     <div class="main__content__line">
                         <div class="line left">
-                                <div class="people">
+                                <div class="people" id="ab-I">
                                     AB- <i class="fas fa-user"></i>
                                 </div>
 
@@ -150,7 +154,7 @@
                         </div>
 
                         <div class="line right">
-                            <div class="people">
+                            <div class="people" id="ab+I">
                                 AB+ <i class="fas fa-user"></i>
                             </div>
 
@@ -183,6 +187,14 @@
                 document.getElementById('b+').className = 'grey1';
                 document.getElementById('ab-').className = 'grey1';
                 document.getElementById('ab+').className = 'grey1';
+                document.getElementById('o-I').className = 'bold';
+                document.getElementById('o+I').className = 'bold';
+                document.getElementById('a-I').className = 'bold';
+                document.getElementById('a+I').className = 'bold';
+                document.getElementById('b+I').className = 'bold';
+                document.getElementById('b-I').className = 'bold';
+                document.getElementById('ab-I').className = 'bold';
+                document.getElementById('ab+I').className = 'bold';
             };
 
              function scene2(){
@@ -196,9 +208,17 @@
                 document.getElementById('b+').className = 'grey1';
                 document.getElementById('ab-').className = 'grey';
                 document.getElementById('ab+').className = 'grey1';
+                document.getElementById('o+I').className = 'bold';
+                document.getElementById('a+I').className = 'bold';
+                document.getElementById('b+I').className = 'bold';
+                document.getElementById('ab+I').className = 'bold';
+                document.getElementById('o-I').className = 'people';
+                document.getElementById('a-I').className = 'people';
+                document.getElementById('b-I').className = 'people';
+                document.getElementById('ab-I').className = 'people';
             };
             function scene3(){
-                document.getElementById('size').className = 'size1';
+                document.getElementById('size').className = 'size2';
                 document.getElementById('main_line').className = 'main_line1';
                 document.getElementById('o-').className = 'grey';
                 document.getElementById('o+').className = 'grey';
@@ -208,6 +228,14 @@
                 document.getElementById('b+').className = 'grey';
                 document.getElementById('ab-').className = 'grey1';
                 document.getElementById('ab+').className = 'grey1';
+                document.getElementById('o-I').className = 'people';
+                document.getElementById('o+I').className = 'people';
+                document.getElementById('a-I').className = 'bold';
+                document.getElementById('a+I').className = 'bold';
+                document.getElementById('b+I').className = 'people';
+                document.getElementById('b-I').className = 'people';
+                document.getElementById('ab-I').className = 'bold';
+                document.getElementById('ab+I').className = 'bold';
             };
             function scene4(){
                 document.getElementById('size').className = 'size1';
@@ -220,9 +248,17 @@
                 document.getElementById('b+').className = 'grey';
                 document.getElementById('ab-').className = 'grey';
                 document.getElementById('ab+').className = 'grey1';
+                document.getElementById('o-I').className = 'people';
+                document.getElementById('o+I').className = 'people';
+                document.getElementById('a-I').className = 'people';
+                document.getElementById('a+I').className = 'bold';
+                document.getElementById('b+I').className = 'people';
+                document.getElementById('b-I').className = 'people';
+                document.getElementById('ab-I').className = 'people';
+                document.getElementById('ab+I').className = 'bold';
             };
             function scene5(){
-                document.getElementById('size').className = 'size1';
+                document.getElementById('size').className = 'size2';
                 document.getElementById('main_line').className = 'main_line1';
                 document.getElementById('o-').className = 'grey';
                 document.getElementById('o+').className = 'grey';
@@ -232,6 +268,14 @@
                 document.getElementById('b+').className = 'grey1';
                 document.getElementById('ab-').className = 'grey1';
                 document.getElementById('ab+').className = 'grey1';
+                document.getElementById('o-I').className = 'people';
+                document.getElementById('o+I').className = 'people';
+                document.getElementById('a-I').className = 'people';
+                document.getElementById('a+I').className = 'people';
+                document.getElementById('b+I').className = 'bold';
+                document.getElementById('b-I').className = 'bold';
+                document.getElementById('ab-I').className = 'bold';
+                document.getElementById('ab+I').className = 'bold';
             };
             function scene6(){
                 document.getElementById('size').className = 'size1';
@@ -244,9 +288,17 @@
                 document.getElementById('b+').className = 'grey1';
                 document.getElementById('ab-').className = 'grey';
                 document.getElementById('ab+').className = 'grey1';
+                ddocument.getElementById('o-I').className = 'people';
+                document.getElementById('o+I').className = 'people';
+                document.getElementById('a-I').className = 'people';
+                document.getElementById('a+I').className = 'people';
+                document.getElementById('b+I').className = 'bold';
+                document.getElementById('b-I').className = 'people';
+                document.getElementById('ab-I').className = 'people';
+                document.getElementById('ab+I').className = 'bold';
             };
             function scene7(){
-                document.getElementById('size').className = 'size1';
+                document.getElementById('size').className = 'size2';
                 document.getElementById('main_line').className = 'main_line1';
                 document.getElementById('o-').className = 'grey';
                 document.getElementById('o+').className = 'grey';
@@ -256,6 +308,14 @@
                 document.getElementById('b+').className = 'grey';
                 document.getElementById('ab-').className = 'grey1';
                 document.getElementById('ab+').className = 'grey1';
+                document.getElementById('o-I').className = 'people';
+                document.getElementById('o+I').className = 'people';
+                document.getElementById('a-I').className = 'people';
+                document.getElementById('a+I').className = 'people';
+                document.getElementById('b+I').className = 'people';
+                document.getElementById('b-I').className = 'people';
+                document.getElementById('ab-I').className = 'bold';
+                document.getElementById('ab+I').className = 'bold';
             };
             function scene8(){
                 document.getElementById('size').className = 'size1';
@@ -268,6 +328,14 @@
                 document.getElementById('b+').className = 'grey';
                 document.getElementById('ab-').className = 'grey';
                 document.getElementById('ab+').className = 'grey1';
+                document.getElementById('o-I').className = 'people';
+                document.getElementById('o+I').className = 'people';
+                document.getElementById('a-I').className = 'people';
+                document.getElementById('a+I').className = 'people';
+                document.getElementById('b+I').className = 'people';
+                document.getElementById('b-I').className = 'people';
+                document.getElementById('ab-I').className = 'people';
+                document.getElementById('ab+I').className = 'bold';
             }
     </script>
 
