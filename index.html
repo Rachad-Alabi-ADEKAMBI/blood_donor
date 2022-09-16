@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+
+    <div class="container">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-    <script src='https://unpkg.com/vue@3'></script>
-    <link rel="stylesheet" href="main.css">
-    <script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
-
-    <title>Slainghi - Accueil</title>
-</head>
-<body>
-    <div class="container">
 
         <p>
             Savez-vous à qui vous pouvez donner votre groupe sanguin?
@@ -89,7 +77,7 @@
 
                         <div class="line right">
                             <div class="people" id="o+I">
-                                O+ <i class="fas fa-user"></i>
+                                 <i class="fas fa-user"></i> O+
                             </div>
 
                             <div class="grey" id="o+">
@@ -111,7 +99,7 @@
 
                         <div class="line right">
                             <div class="people" id="a+I">
-                                A+ <i class="fas fa-user"></i>
+                                 <i class="fas fa-user"></i> A+
                             </div>
 
                             <div class="grey" id='a+'>
@@ -133,7 +121,7 @@
 
                         <div class="line right">
                             <div class="people" id="b+I">
-                                B+ <i class="fas fa-user"></i>
+                                 <i class="fas fa-user"></i> B+
                             </div>
 
                             <div class="grey" id="b+">
@@ -155,7 +143,7 @@
 
                         <div class="line right">
                             <div class="people" id="ab+I">
-                                AB+ <i class="fas fa-user"></i>
+                                 <i class="fas fa-user"></i> AB+
                             </div>
 
                             <div class="grey" id="ab+">
@@ -170,6 +158,214 @@
                 </div>
         </div>
     </div>
+
+
+<style>
+
+
+@keyframes move {
+  0% {
+    width: 0%;
+    margin: auto 0;
+  }
+
+  100% {
+    width: 100%;
+    margin: auto 0;
+  }
+}
+@-webkit-keyframes moveL {
+  0% {
+    width: 0%;
+    margin: auto 0;
+  }
+  100% {
+    width: 100%;
+    margin: auto 0;
+  }
+}
+
+html, body {
+  box-sizing: border-box;
+}
+
+.size1 {
+  width: 100%;
+  height: 45%;
+  background-color: #B51E23;
+  bottom: 0;
+  position: absolute;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: 500ms ease-in-out;
+}
+
+.size2 {
+  width: 100%;
+  height: 35%;
+  background-color: #B51E23;
+  bottom: 0;
+  position: absolute;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bold {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25%;
+  margin-right: 5px;
+}
+
+.grey1 {
+  background-color: #B51E23;
+  height: 10px;
+  border: 1px #666666 solid;
+  margin: auto auto 0 auto;
+  width: 66%;
+transition-timing-function: ease-in-out;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 2500
+}
+
+.main_line1 {
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 49%;
+  width: 11px;
+  background-color: #B51E23;
+  border: 1px #666666 solid;
+}
+
+.container {
+  display: block;
+  margin: 120px auto;
+  width: 350px;
+}
+
+.cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 90px;
+}
+.cases .case {
+  border: 1px solid #B51E23;
+  border-radius: 5px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  cursor: pointer;
+  display: table;
+  transition: 1000ms ease-in-out;
+}
+.cases .case p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cases .case:hover {
+  transform: scale(1.1);
+  border: 2px #B6DCF0 solid;
+}
+.cases .case:hover p {
+  font-weight: bold;
+}
+
+.main {
+  display: block;
+  width: 320px;
+  margin: 20px auto;
+}
+.main__top {
+  padding-left: 10px;
+}
+.main__top__box {
+  margin: auto;
+  height: 90px;
+  width: 55px;
+  border: 10px solid #B6DCF0;
+  border-radius: 10px 10px 20px 20px;
+  background-color: #666666;
+  position: relative;
+}
+.main__top__box .size {
+  width: 100%;
+  background-color: #B51E23;
+  bottom: 0;
+  position: absolute;
+  border-radius: 15px;
+}
+.main__content {
+  display: block;
+  position: relative;
+  height: 200px;
+}
+.main__content__line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.main__content__line .line {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 15px;
+  margin: 20px auto;
+}
+.main__content__line .line .people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 23%;
+  margin: 5px;
+  font-size: 1em;
+}
+.main__content__line .line .people i {
+  margin: auto 5px auto 5px;
+  color: #666666;
+  height: 10px;
+  width: 10px;
+}
+.main__content__line .line .grey {
+  background-color: #666666;
+  height: 10px;
+  border: 1px #666666 solid;
+  margin: auto auto 0 auto;
+  width: 66%;
+transition-timing-function: ease-in-out;
+  -webkit-animation-name: moveL;
+          animation-name: moveL;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+}
+.main__content__line .right {
+  flex-direction: row-reverse;
+}
+.main__content .main-line {
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 49%;
+  width: 11px;
+  background-color: #666666;
+  border: 1px #666666 solid;
+}/*# sourceMappingURL=main.css.map */
+</style>
+
+
+
+
 
     <script>
             let box = document.getElementById('box');
@@ -338,6 +534,3 @@
                 document.getElementById('ab+I').className = 'bold';
             }
     </script>
-
-</body>
-</html>
