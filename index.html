@@ -1,365 +1,454 @@
 
     <div class="container">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+  integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 
-        <p>
-            Savez-vous à qui vous pouvez donner votre groupe sanguin?
-        </p>
-        <div class="cases">
-            <div class="case" id="click1" onclick="scene1()">
-                <p>O-</p>
-            </div>
+      <p>
+          Savez-vous à qui vous pouvez donner votre groupe sanguin?
+      </p>
+      <div class="cases">
+          <div class="case" id="case1" onclick="scene1()">
+              <p>O-</p>
+          </div>
 
-            <div class="case" id="clic2" onclick="scene2()">
-                <p>
-                    O+
-                </p>
-            </div>
+          <div class="case" id="case2" onclick="scene2()">
+              <p>
+                  O+
+              </p>
+          </div>
 
-            <div class="case" onclick="scene3()">
-                <p>
-                    A-
-                </p>
-            </div>
+          <div class="case" id="case3" onclick="scene3()">
+              <p>
+                  A-
+              </p>
+          </div>
 
-            <div class="case" onclick="scene4()">
-                <p>A+</p>
-            </div>
+          <div class="case"  id="case4"onclick="scene4()">
+              <p>A+</p>
+          </div>
 
-            <div class="case" onclick="scene5()">
-                <p>
-                    B-
-                </p>
-            </div>
+          <div class="case"  id="case5" onclick="scene5()">
+              <p>
+                  B-
+              </p>
+          </div>
 
-            <div class="case" onclick="scene6()">
-                <p>
-                    B+
-                </p>
-            </div>
+          <div class="case"  id="case6" onclick="scene6()">
+              <p>
+                  B+
+              </p>
+          </div>
 
-            <div class="case" onclick="scene7()">
-                <p>
-                    AB-
-                </p>
-            </div>
+          <div class="case" id="case7" onclick="scene7()">
+              <p>
+                  AB-
+              </p>
+          </div>
 
-            <div class="case" onclick="scene8()">
-                <p>
-                    AB+
+          <div class="case"  id="case8" onclick="scene8()">
+              <p>
+                  AB+
 
-                </p>
-            </div>
-        </div>
+              </p>
+          </div>
+      </div>
 
-        <div class="main">
-            <div class="main__top">
-                <div class="main__top__box" id="box">
-                    <div class="size" id='size'>
+      <div class="main">
+          <div class="main__top">
+              <div class="main__top__box" id="box">
+                  <div class="size" id='size'>
 
-                    </div>
-                </div>
-            </div>
+                  </div>
+              </div>
+          </div>
 
-                <div class="main__content">
-                    <div class="main__content__line">
-                        <div class="line left">
-                                <div class="people" id="o-I">
-                                    O- <i class="fas fa-user"></i>
-                                </div>
+              <div class="main__content">
+                  <div class="main__content__line">
+                      <div class="line left">
+                              <div class="people" id="o-I">
+                                  O- <i class="fas fa-user"></i>
+                              </div>
 
-                                <div class="grey" id="o-">
+                              <div class="grey" id="o-">
 
-                                </div>
-                        </div>
+                              </div>
+                      </div>
 
-                        <div class="line right">
-                            <div class="people" id="o+I">
-                                 <i class="fas fa-user"></i> O+
-                            </div>
+                      <div class="line right">
+                          <div class="people" id="o+I">
+                               <i class="fas fa-user"></i> O+
+                          </div>
 
-                            <div class="grey" id="o+">
+                          <div class="grey" id="o+">
 
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                      </div>
+                  </div>
 
-                    <div class="main__content__line">
-                        <div class="line left">
-                                <div class="people" id="a-I">
-                                    A- <i class="fas fa-user"></i>
-                                </div>
+                  <div class="main__content__line">
+                      <div class="line left">
+                              <div class="people" id="a-I">
+                                  A- <i class="fas fa-user"></i>
+                              </div>
 
-                                <div class="grey" id="a-">
+                              <div class="grey" id="a-">
 
-                                </div>
-                        </div>
+                              </div>
+                      </div>
 
-                        <div class="line right">
-                            <div class="people" id="a+I">
-                                 <i class="fas fa-user"></i> A+
-                            </div>
+                      <div class="line right">
+                          <div class="people" id="a+I">
+                               <i class="fas fa-user"></i> A+
+                          </div>
 
-                            <div class="grey" id='a+'>
+                          <div class="grey" id='a+'>
 
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                      </div>
+                  </div>
 
-                    <div class="main__content__line">
-                        <div class="line left">
-                                <div class="people" id="b-I">
-                                    B- <i class="fas fa-user"></i>
-                                </div>
+                  <div class="main__content__line">
+                      <div class="line left">
+                              <div class="people" id="b-I">
+                                  B- <i class="fas fa-user"></i>
+                              </div>
 
-                                <div class="grey" id="b-">
+                              <div class="grey" id="b-">
 
-                                </div>
-                        </div>
+                              </div>
+                      </div>
 
-                        <div class="line right">
-                            <div class="people" id="b+I">
-                                 <i class="fas fa-user"></i> B+
-                            </div>
+                      <div class="line right">
+                          <div class="people" id="b+I">
+                               <i class="fas fa-user"></i> B+
+                          </div>
 
-                            <div class="grey" id="b+">
+                          <div class="grey" id="b+">
 
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                      </div>
+                  </div>
 
-                    <div class="main__content__line">
-                        <div class="line left">
-                                <div class="people" id="ab-I">
-                                    AB- <i class="fas fa-user"></i>
-                                </div>
+                  <div class="main__content__line">
+                      <div class="line left">
+                              <div class="people" id="ab-I">
+                                  AB- <i class="fas fa-user"></i>
+                              </div>
 
-                                <div class="grey" id="ab-">
+                              <div class="grey" id="ab-">
 
-                                </div>
-                        </div>
+                              </div>
+                      </div>
 
-                        <div class="line right">
-                            <div class="people" id="ab+I">
-                                 <i class="fas fa-user"></i> AB+
-                            </div>
+                      <div class="line right">
+                          <div class="people" id="ab+I">
+                               <i class="fas fa-user"></i> AB+
+                          </div>
 
-                            <div class="grey" id="ab+">
+                          <div class="grey" id="ab+">
 
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                      </div>
+                  </div>
 
-                    <div class="main-line" id ='main_line'>
+                  <div class="main-line" id ='main_line'>
 
-                    </div>
-                </div>
-        </div>
-    </div>
+                  </div>
+              </div>
+      </div>
+  </div>
 
 
 <style>
 
 
-@keyframes move {
-  0% {
-    width: 0%;
-    margin: auto 0;
-  }
+@keyframes line {
+0% {
+  transform: scaleY(0);
+}
 
-  100% {
-    width: 100%;
-    margin: auto 0;
-  }
+100% {
+  transform: scaleY(1);
+}
+}
+
+@keyframes line2 {
+0% {
+  transform: scaleY(0);
+}
+
+100% {
+  transform: scaleY(1);
+}
+}
+
+
+@keyframes size {
+0% {
+  height: 0%;
+}
+
+33% {
+  height: 33%;
+}
+
+66% {
+  height: 60%;
+}
+
+100% {
+  height: 40%;
+}
+}
+
+@keyframes size2 {
+0% {
+  height: 0%;
+}
+
+33% {
+  height: 33%;
+}
+
+66% {
+  height: 60%;
+}
+
+100% {
+  height: 55%;
+}
+}
+
+@keyframes move {
+0% {
+  width: 0%;
+  margin: auto 0;
+}
+
+100% {
+  width: 100%;
+  margin: auto 0;
+}
 }
 @-webkit-keyframes moveL {
-  0% {
-    width: 0%;
-    margin: auto 0;
-  }
-  100% {
-    width: 100%;
-    margin: auto 0;
-  }
+0% {
+  width: 0%;
+  margin: auto 0;
+}
+100% {
+  width: 100%;
+  margin: auto 0;
+}
 }
 
 html, body {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 .size1 {
-  width: 100%;
-  height: 45%;
-  background-color: #B51E23;
-  bottom: 0;
-  position: absolute;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  transition: 500ms ease-in-out;
+width: 100%;
+background-color: #B51E23;
+bottom: 0;
+position: absolute;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+animation: size 3s ease-in-out;
+height: 40%;
 }
 
 .size2 {
-  width: 100%;
-  height: 35%;
-  background-color: #B51E23;
-  bottom: 0;
-  position: absolute;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+width: 100%;
+background-color: #B51E23;
+bottom: 0;
+position: absolute;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+animation: size2 3s ease-in-out;
+height: 55%;
 }
 
+
 .bold {
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 25%;
-  margin-right: 5px;
+font-weight: bold;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 25%;
+margin-right: 5px;
 }
 
 .grey1 {
-  background-color: #B51E23;
-  height: 10px;
-  border: 1px #666666 solid;
-  margin: auto auto 0 auto;
-  width: 66%;
+background-color: #B51E23;
+height: 10px;
+border: 1px #666666 solid;
+margin: auto auto 0 auto;
+width: 66%;
 transition-timing-function: ease-in-out;
-  -webkit-animation-name: move;
-          animation-name: move;
-  -webkit-animation-duration: 3s;
-          animation-duration: 2500
+-webkit-animation-name: move;
+        animation-name: move;
+-webkit-animation-duration: 3s;
+        animation-duration: 2500
 }
 
 .main_line1 {
+  transform: scaleY(1);
   height: 100%;
-  bottom: 0;
-  position: absolute;
-  left: 49%;
-  width: 11px;
-  background-color: #B51E23;
-  border: 1px #666666 solid;
+bottom: 0;
+position: absolute;
+left: 49%;
+width: 11px;
+background-color: #B51E23;
+border: 1px #666666 solid;
+animation: line 1500ms ease-in-out;
+transform-origin: top;
+}
+
+.main_line2 {
+  transform: scaleY(1);
+  height: 100%;
+bottom: 0;
+position: absolute;
+left: 49%;
+width: 11px;
+background-color: #B51E23;
+border: 1px #666666 solid;
+animation: line2 1650ms ease-in-out;
+transform-origin: top;
 }
 
 .container {
-  display: block;
-  margin: 120px auto;
-  width: 350px;
+display: block;
+margin: 120px auto;
+width: 350px;
 }
 
 .cases {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 200px;
-  flex-wrap: wrap;
-  margin: auto;
-  height: 90px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 200px;
+flex-wrap: wrap;
+margin: auto;
+height: 100px;
 }
 .cases .case {
-  border: 1px solid #B51E23;
-  border-radius: 5px;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  cursor: pointer;
-  display: table;
-  transition: 1000ms ease-in-out;
+border: 1px solid #B51E23;
+border-radius: 5px;
+text-align: center;
+width: 40px;
+height: 40px;
+margin: auto;
+cursor: pointer;
+display: table;
+transition: 1000ms ease-in-out;
 }
+
+.light{
+border: 3px solid  #B6DCF0;
+border-radius: 5px;
+text-align: center;
+width: 40px;
+font-weight:  bold;
+height: 30px;
+margin: auto;
+cursor: pointer;
+display: table;
+transition: 1000ms ease-in-out;
+}
+
 .cases .case p {
-  display: table-cell;
-  vertical-align: middle;
+display: table-cell;
+vertical-align: middle;
 }
 .cases .case:hover {
-  transform: scale(1.1);
-  border: 2px #B6DCF0 solid;
+border: 2px #B6DCF0 solid;
 }
 .cases .case:hover p {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .main {
-  display: block;
-  width: 320px;
-  margin: 20px auto;
+display: block;
+width: 320px;
+margin: 20px auto;
 }
 .main__top {
-  padding-left: 10px;
+padding-left: 10px;
 }
-.main__top__box {
-  margin: auto;
-  height: 90px;
-  width: 55px;
-  border: 10px solid #B6DCF0;
-  border-radius: 10px 10px 20px 20px;
-  background-color: #666666;
-  position: relative;
+.main__top__box{
+margin: auto;
+height: 90px;
+width: 70px;
+border: 10px solid #B6DCF0;
+border-radius: 15px 15px 25px 25px;
+background-color: #666666;
+position: relative;
 }
+
 .main__top__box .size {
-  width: 100%;
-  background-color: #B51E23;
-  bottom: 0;
-  position: absolute;
-  border-radius: 15px;
+width: 100%;
+background-color: #B51E23;
+bottom: 0;
+position: absolute;
+border-radius: 15px;
 }
 .main__content {
-  display: block;
-  position: relative;
-  height: 200px;
+display: block;
+position: relative;
+height: 200px;
 }
 .main__content__line {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: space-between;
 }
 .main__content__line .line {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 15px;
-  margin: 20px auto;
+width: 50%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 15px;
+margin: 20px auto;
 }
 .main__content__line .line .people {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 23%;
-  margin: 5px;
-  font-size: 1em;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 23%;
+margin: 5px;
+font-size: 1em;
 }
 .main__content__line .line .people i {
-  margin: auto 5px auto 5px;
-  color: #666666;
-  height: 10px;
-  width: 10px;
+margin: auto 5px auto 5px;
+color: #666666;
+height: 10px;
+width: 10px;
 }
 .main__content__line .line .grey {
-  background-color: #666666;
-  height: 10px;
-  border: 1px #666666 solid;
-  margin: auto auto 0 auto;
-  width: 66%;
+background-color: #666666;
+height: 10px;
+border: 1px #666666 solid;
+margin: auto auto 0 auto;
+width: 66%;
 transition-timing-function: ease-in-out;
-  -webkit-animation-name: moveL;
-          animation-name: moveL;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
+-webkit-animation-name: moveL;
+        animation-name: moveL;
+-webkit-animation-duration: 2s;
+        animation-duration: 2s;
 }
 .main__content__line .right {
-  flex-direction: row-reverse;
+flex-direction: row-reverse;
 }
 .main__content .main-line {
-  height: 100%;
-  bottom: 0;
-  position: absolute;
-  left: 49%;
-  width: 11px;
-  background-color: #666666;
-  border: 1px #666666 solid;
+height: 100%;
+bottom: 0;
+position: absolute;
+left: 49%;
+width: 11px;
+background-color: #666666;
+border: 1px #666666 solid;
 }/*# sourceMappingURL=main.css.map */
 </style>
 
@@ -367,170 +456,247 @@ transition-timing-function: ease-in-out;
 
 
 
-    <script>
-            let box = document.getElementById('box');
-            let main_line = document.getElementById('main_line');
-            let size = document.getElementById('size');
+  <script>
+          let box = document.getElementById('box');
+          let main_line = document.getElementById('main_line');
+          let size = document.getElementById('size');
 
-            function scene1(){
-                document.getElementById('size').className = 'size1';
-                document.getElementById('main_line').className = 'main_line1';
-                document.getElementById('o-').className = 'grey1';
-                document.getElementById('o+').className = 'grey1';
-                document.getElementById('a-').className = 'grey1';
-                document.getElementById('a+').className = 'grey1';
-                document.getElementById('b-').className = 'grey1';
-                document.getElementById('b+').className = 'grey1';
-                document.getElementById('ab-').className = 'grey1';
-                document.getElementById('ab+').className = 'grey1';
-                document.getElementById('o-I').className = 'bold';
-                document.getElementById('o+I').className = 'bold';
-                document.getElementById('a-I').className = 'bold';
-                document.getElementById('a+I').className = 'bold';
-                document.getElementById('b+I').className = 'bold';
-                document.getElementById('b-I').className = 'bold';
-                document.getElementById('ab-I').className = 'bold';
-                document.getElementById('ab+I').className = 'bold';
-            };
+          function scene1(){
+              document.getElementById('size').className = 'size1';
+              document.getElementById('main_line').className = 'main_line1';
+              document.getElementById('o-').className = 'grey1';
+              document.getElementById('o+').className = 'grey1';
+              document.getElementById('a-').className = 'grey1';
+              document.getElementById('a+').className = 'grey1';
+              document.getElementById('b-').className = 'grey1';
+              document.getElementById('b+').className = 'grey1';
+              document.getElementById('ab-').className = 'grey1';
+              document.getElementById('ab+').className = 'grey1';
+              document.getElementById('o-I').className = 'bold';
+              document.getElementById('o+I').className = 'bold';
+              document.getElementById('a-I').className = 'bold';
+              document.getElementById('a+I').className = 'bold';
+              document.getElementById('b+I').className = 'bold';
+              document.getElementById('b-I').className = 'bold';
+              document.getElementById('ab-I').className = 'bold';
+              document.getElementById('ab+I').className = 'bold';
+              document.getElementById('case1').className = 'light';
+              document.getElementById('case2').className = 'case';
+              document.getElementById('case3').className = 'case';
+              document.getElementById('case4').className = 'case';
+              document.getElementById('case5').className = 'case';
+              document.getElementById('case6').className = 'case';
+              document.getElementById('case7').className = 'case';
+              document.getElementById('case8').className = 'case';
+          };
 
-             function scene2(){
-                document.getElementById('size').className = 'size1';
-                document.getElementById('main_line').className = 'main_line1';
-                document.getElementById('o-').className = 'grey';
-                document.getElementById('o+').className = 'grey1';
-                document.getElementById('a-').className = 'grey';
-                document.getElementById('a+').className = 'grey1';
-                document.getElementById('b-').className = 'grey';
-                document.getElementById('b+').className = 'grey1';
-                document.getElementById('ab-').className = 'grey';
-                document.getElementById('ab+').className = 'grey1';
-                document.getElementById('o+I').className = 'bold';
-                document.getElementById('a+I').className = 'bold';
-                document.getElementById('b+I').className = 'bold';
-                document.getElementById('ab+I').className = 'bold';
-                document.getElementById('o-I').className = 'people';
-                document.getElementById('a-I').className = 'people';
-                document.getElementById('b-I').className = 'people';
-                document.getElementById('ab-I').className = 'people';
-            };
-            function scene3(){
-                document.getElementById('size').className = 'size2';
-                document.getElementById('main_line').className = 'main_line1';
-                document.getElementById('o-').className = 'grey';
-                document.getElementById('o+').className = 'grey';
-                document.getElementById('a-').className = 'grey1';
-                document.getElementById('a+').className = 'grey1';
-                document.getElementById('b-').className = 'grey';
-                document.getElementById('b+').className = 'grey';
-                document.getElementById('ab-').className = 'grey1';
-                document.getElementById('ab+').className = 'grey1';
-                document.getElementById('o-I').className = 'people';
-                document.getElementById('o+I').className = 'people';
-                document.getElementById('a-I').className = 'bold';
-                document.getElementById('a+I').className = 'bold';
-                document.getElementById('b+I').className = 'people';
-                document.getElementById('b-I').className = 'people';
-                document.getElementById('ab-I').className = 'bold';
-                document.getElementById('ab+I').className = 'bold';
-            };
-            function scene4(){
-                document.getElementById('size').className = 'size1';
-                document.getElementById('main_line').className = 'main_line1';
-                document.getElementById('o-').className = 'grey';
-                document.getElementById('o+').className = 'grey';
-                document.getElementById('a-').className = 'grey';
-                document.getElementById('a+').className = 'grey1';
-                document.getElementById('b-').className = 'grey';
-                document.getElementById('b+').className = 'grey';
-                document.getElementById('ab-').className = 'grey';
-                document.getElementById('ab+').className = 'grey1';
-                document.getElementById('o-I').className = 'people';
-                document.getElementById('o+I').className = 'people';
-                document.getElementById('a-I').className = 'people';
-                document.getElementById('a+I').className = 'bold';
-                document.getElementById('b+I').className = 'people';
-                document.getElementById('b-I').className = 'people';
-                document.getElementById('ab-I').className = 'people';
-                document.getElementById('ab+I').className = 'bold';
-            };
-            function scene5(){
-                document.getElementById('size').className = 'size2';
-                document.getElementById('main_line').className = 'main_line1';
-                document.getElementById('o-').className = 'grey';
-                document.getElementById('o+').className = 'grey';
-                document.getElementById('a-').className = 'grey';
-                document.getElementById('a+').className = 'grey';
-                document.getElementById('b-').className = 'grey1';
-                document.getElementById('b+').className = 'grey1';
-                document.getElementById('ab-').className = 'grey1';
-                document.getElementById('ab+').className = 'grey1';
-                document.getElementById('o-I').className = 'people';
-                document.getElementById('o+I').className = 'people';
-                document.getElementById('a-I').className = 'people';
-                document.getElementById('a+I').className = 'people';
-                document.getElementById('b+I').className = 'bold';
-                document.getElementById('b-I').className = 'bold';
-                document.getElementById('ab-I').className = 'bold';
-                document.getElementById('ab+I').className = 'bold';
-            };
-            function scene6(){
-                document.getElementById('size').className = 'size1';
-                document.getElementById('main_line').className = 'main_line1';
-                document.getElementById('o-').className = 'grey';
-                document.getElementById('o+').className = 'grey';
-                document.getElementById('a-').className = 'grey';
-                document.getElementById('a+').className = 'grey';
-                document.getElementById('b-').className = 'grey';
-                document.getElementById('b+').className = 'grey1';
-                document.getElementById('ab-').className = 'grey';
-                document.getElementById('ab+').className = 'grey1';
-                ddocument.getElementById('o-I').className = 'people';
-                document.getElementById('o+I').className = 'people';
-                document.getElementById('a-I').className = 'people';
-                document.getElementById('a+I').className = 'people';
-                document.getElementById('b+I').className = 'bold';
-                document.getElementById('b-I').className = 'people';
-                document.getElementById('ab-I').className = 'people';
-                document.getElementById('ab+I').className = 'bold';
-            };
-            function scene7(){
-                document.getElementById('size').className = 'size2';
-                document.getElementById('main_line').className = 'main_line1';
-                document.getElementById('o-').className = 'grey';
-                document.getElementById('o+').className = 'grey';
-                document.getElementById('a-').className = 'grey';
-                document.getElementById('a+').className = 'grey';
-                document.getElementById('b-').className = 'grey';
-                document.getElementById('b+').className = 'grey';
-                document.getElementById('ab-').className = 'grey1';
-                document.getElementById('ab+').className = 'grey1';
-                document.getElementById('o-I').className = 'people';
-                document.getElementById('o+I').className = 'people';
-                document.getElementById('a-I').className = 'people';
-                document.getElementById('a+I').className = 'people';
-                document.getElementById('b+I').className = 'people';
-                document.getElementById('b-I').className = 'people';
-                document.getElementById('ab-I').className = 'bold';
-                document.getElementById('ab+I').className = 'bold';
-            };
-            function scene8(){
-                document.getElementById('size').className = 'size1';
-                document.getElementById('main_line').className = 'main_line1';
-                document.getElementById('o-').className = 'grey';
-                document.getElementById('o+').className = 'grey';
-                document.getElementById('a-').className = 'grey';
-                document.getElementById('a+').className = 'grey';
-                document.getElementById('b-').className = 'grey';
-                document.getElementById('b+').className = 'grey';
-                document.getElementById('ab-').className = 'grey';
-                document.getElementById('ab+').className = 'grey1';
-                document.getElementById('o-I').className = 'people';
-                document.getElementById('o+I').className = 'people';
-                document.getElementById('a-I').className = 'people';
-                document.getElementById('a+I').className = 'people';
-                document.getElementById('b+I').className = 'people';
-                document.getElementById('b-I').className = 'people';
-                document.getElementById('ab-I').className = 'people';
-                document.getElementById('ab+I').className = 'bold';
-            }
-    </script>
+           function scene2(){
+              document.getElementById('size').className = 'size2';
+              document.getElementById('main_line').className = 'main_line2';
+              document.getElementById('o-').className = 'grey';
+              document.getElementById('o+').className = 'grey1';
+              document.getElementById('a-').className = 'grey';
+              document.getElementById('a+').className = 'grey1';
+              document.getElementById('b-').className = 'grey';
+              document.getElementById('b+').className = 'grey1';
+              document.getElementById('ab-').className = 'grey';
+              document.getElementById('ab+').className = 'grey1';
+              document.getElementById('o+I').className = 'bold';
+              document.getElementById('a+I').className = 'bold';
+              document.getElementById('b+I').className = 'bold';
+              document.getElementById('ab+I').className = 'bold';
+              document.getElementById('o-I').className = 'people';
+              document.getElementById('a-I').className = 'people';
+              document.getElementById('b-I').className = 'people';
+              document.getElementById('ab-I').className = 'people';
+
+              document.getElementById('case1').className = 'case';
+              document.getElementById('case2').className = 'light';
+              document.getElementById('case3').className = 'case';
+              document.getElementById('case4').className = 'case';
+              document.getElementById('case5').className = 'case';
+              document.getElementById('case6').className = 'case';
+              document.getElementById('case7').className = 'case';
+              document.getElementById('case8').className = 'case';
+          };
+          function scene3(){
+              document.getElementById('size').className = 'size1';
+              document.getElementById('main_line').className = 'main_line1';
+              document.getElementById('o-').className = 'grey';
+              document.getElementById('o+').className = 'grey';
+              document.getElementById('a-').className = 'grey1';
+              document.getElementById('a+').className = 'grey1';
+              document.getElementById('b-').className = 'grey';
+              document.getElementById('b+').className = 'grey';
+              document.getElementById('ab-').className = 'grey1';
+              document.getElementById('ab+').className = 'grey1';
+              document.getElementById('o-I').className = 'people';
+              document.getElementById('o+I').className = 'people';
+              document.getElementById('a-I').className = 'bold';
+              document.getElementById('a+I').className = 'bold';
+              document.getElementById('b+I').className = 'people';
+              document.getElementById('b-I').className = 'people';
+              document.getElementById('ab-I').className = 'bold';
+              document.getElementById('ab+I').className = 'bold';
+
+
+              document.getElementById('case1').className = 'case';
+              document.getElementById('case2').className = 'case';
+              document.getElementById('case3').className = 'light';
+              document.getElementById('case4').className = 'case';
+              document.getElementById('case5').className = 'case';
+              document.getElementById('case6').className = 'case';
+              document.getElementById('case7').className = 'case';
+              document.getElementById('case8').className = 'case';
+          };
+          function scene4(){
+              document.getElementById('size').className = 'size2';
+              document.getElementById('main_line').className = 'main_line2';
+              document.getElementById('o-').className = 'grey';
+              document.getElementById('o+').className = 'grey';
+              document.getElementById('a-').className = 'grey';
+              document.getElementById('a+').className = 'grey1';
+              document.getElementById('b-').className = 'grey';
+              document.getElementById('b+').className = 'grey';
+              document.getElementById('ab-').className = 'grey';
+              document.getElementById('ab+').className = 'grey1';
+              document.getElementById('o-I').className = 'people';
+              document.getElementById('o+I').className = 'people';
+              document.getElementById('a-I').className = 'people';
+              document.getElementById('a+I').className = 'bold';
+              document.getElementById('b+I').className = 'people';
+              document.getElementById('b-I').className = 'people';
+              document.getElementById('ab-I').className = 'people';
+              document.getElementById('ab+I').className = 'bold';
+
+
+              document.getElementById('case1').className = 'case';
+              document.getElementById('case2').className = 'case';
+              document.getElementById('case3').className = 'case';
+              document.getElementById('case4').className = 'light';
+              document.getElementById('case5').className = 'case';
+              document.getElementById('case6').className = 'case';
+              document.getElementById('case7').className = 'case';
+              document.getElementById('case8').className = 'case';
+          };
+          function scene5(){
+              document.getElementById('size').className = 'size1';
+              document.getElementById('main_line').className = 'main_line1';
+              document.getElementById('o-').className = 'grey';
+              document.getElementById('o+').className = 'grey';
+              document.getElementById('a-').className = 'grey';
+              document.getElementById('a+').className = 'grey';
+              document.getElementById('b-').className = 'grey1';
+              document.getElementById('b+').className = 'grey1';
+              document.getElementById('ab-').className = 'grey1';
+              document.getElementById('ab+').className = 'grey1';
+              document.getElementById('o-I').className = 'people';
+              document.getElementById('o+I').className = 'people';
+              document.getElementById('a-I').className = 'people';
+              document.getElementById('a+I').className = 'people';
+              document.getElementById('b+I').className = 'bold';
+              document.getElementById('b-I').className = 'bold';
+              document.getElementById('ab-I').className = 'bold';
+              document.getElementById('ab+I').className = 'bold';
+
+
+              document.getElementById('case1').className = 'case';
+              document.getElementById('case2').className = 'case';
+              document.getElementById('case3').className = 'case';
+              document.getElementById('case4').className = 'case';
+              document.getElementById('case5').className = 'light';
+              document.getElementById('case6').className = 'case';
+              document.getElementById('case7').className = 'case';
+              document.getElementById('case8').className = 'case';
+          };
+          function scene6(){
+              document.getElementById('size').className = 'size2';
+              document.getElementById('main_line').className = 'main_line2';
+              document.getElementById('o-').className = 'grey';
+              document.getElementById('o+').className = 'grey';
+              document.getElementById('a-').className = 'grey';
+              document.getElementById('a+').className = 'grey';
+              document.getElementById('b-').className = 'grey';
+              document.getElementById('b+').className = 'grey1';
+              document.getElementById('ab-').className = 'grey';
+              document.getElementById('ab+').className = 'grey1';
+              ddocument.getElementById('o-I').className = 'people';
+              document.getElementById('o+I').className = 'people';
+              document.getElementById('a-I').className = 'people';
+              document.getElementById('a+I').className = 'people';
+              document.getElementById('b+I').className = 'bold';
+              document.getElementById('b-I').className = 'people';
+              document.getElementById('ab-I').className = 'people';
+              document.getElementById('ab+I').className = 'bold';
+
+
+              document.getElementById('case1').className = 'case';
+              document.getElementById('case2').className = 'case';
+              document.getElementById('case3').className = 'case';
+              document.getElementById('case4').className = 'case';
+              document.getElementById('case5').className = 'case';
+              document.getElementById('case6').className = 'light';
+              document.getElementById('case7').className = 'case';
+              document.getElementById('case8').className = 'case';
+          };
+          function scene7(){
+              document.getElementById('size').className = 'size1';
+              document.getElementById('main_line').className = 'main_line1';
+              document.getElementById('o-').className = 'grey';
+              document.getElementById('o+').className = 'grey';
+              document.getElementById('a-').className = 'grey';
+              document.getElementById('a+').className = 'grey';
+              document.getElementById('b-').className = 'grey';
+              document.getElementById('b+').className = 'grey';
+              document.getElementById('ab-').className = 'grey1';
+              document.getElementById('ab+').className = 'grey1';
+              document.getElementById('o-I').className = 'people';
+              document.getElementById('o+I').className = 'people';
+              document.getElementById('a-I').className = 'people';
+              document.getElementById('a+I').className = 'people';
+              document.getElementById('b+I').className = 'people';
+              document.getElementById('b-I').className = 'people';
+              document.getElementById('ab-I').className = 'bold';
+              document.getElementById('ab+I').className = 'bold';
+
+
+              document.getElementById('case1').className = 'case';
+              document.getElementById('case2').className = 'case';
+              document.getElementById('case3').className = 'case';
+              document.getElementById('case4').className = 'case';
+              document.getElementById('case5').className = 'case';
+              document.getElementById('case6').className = 'case';
+              document.getElementById('case7').className = 'light';
+              document.getElementById('case8').className = 'case';
+          };
+          function scene8(){
+              document.getElementById('size').className = 'size2';
+              document.getElementById('main_line').className = 'main_line2';
+              document.getElementById('o-').className = 'grey';
+              document.getElementById('o+').className = 'grey';
+              document.getElementById('a-').className = 'grey';
+              document.getElementById('a+').className = 'grey';
+              document.getElementById('b-').className = 'grey';
+              document.getElementById('b+').className = 'grey';
+              document.getElementById('ab-').className = 'grey';
+              document.getElementById('ab+').className = 'grey1';
+              document.getElementById('o-I').className = 'people';
+              document.getElementById('o+I').className = 'people';
+              document.getElementById('a-I').className = 'people';
+              document.getElementById('a+I').className = 'people';
+              document.getElementById('b+I').className = 'people';
+              document.getElementById('b-I').className = 'people';
+              document.getElementById('ab-I').className = 'people';
+              document.getElementById('ab+I').className = 'bold';
+
+
+              document.getElementById('case1').className = 'case';
+              document.getElementById('case2').className = 'case';
+              document.getElementById('case3').className = 'case';
+              document.getElementById('case4').className = 'case';
+              document.getElementById('case5').className = 'case';
+              document.getElementById('case6').className = 'case';
+              document.getElementById('case7').className = 'case';
+              document.getElementById('case8').className = 'light';
+          }
+  </script>
