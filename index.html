@@ -1,163 +1,162 @@
 
-    <div class="container">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-  integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <div class="container">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 
-      <p>
-          Savez-vous à qui vous pouvez donner votre groupe sanguin?
-      </p>
-      <div class="cases">
-          <div class="case" id="case1" onclick="scene1()">
-              <p>O-</p>
-          </div>
+    <p>
+        Savez-vous à qui vous pouvez donner votre groupe sanguin?
+    </p>
+    <div class="cases">
+        <div class="case" id="case1" onclick="scene1()">
+            <p class="text" id="text">O-</p>
+        </div>
 
-          <div class="case" id="case2" onclick="scene2()">
-              <p>
-                  O+
-              </p>
-          </div>
+        <div class="case" id="case2" onclick="scene2()">
+          <p class="text" id="text">O+</p>
+        </div>
 
-          <div class="case" id="case3" onclick="scene3()">
-              <p>
-                  A-
-              </p>
-          </div>
+        <div class="case" id="case3" onclick="scene3()">
+            <p>
+                A-
+            </p>
+        </div>
 
-          <div class="case"  id="case4"onclick="scene4()">
-              <p>A+</p>
-          </div>
+        <div class="case"  id="case4"onclick="scene4()">
+            <p>A+</p>
+        </div>
 
-          <div class="case"  id="case5" onclick="scene5()">
-              <p>
-                  B-
-              </p>
-          </div>
+        <div class="case"  id="case5" onclick="scene5()">
+            <p>
+                B-
+            </p>
+        </div>
 
-          <div class="case"  id="case6" onclick="scene6()">
-              <p>
-                  B+
-              </p>
-          </div>
+        <div class="case"  id="case6" onclick="scene6()">
+            <p>
+                B+
+            </p>
+        </div>
 
-          <div class="case" id="case7" onclick="scene7()">
-              <p>
-                  AB-
-              </p>
-          </div>
+        <div class="case" id="case7" onclick="scene7()">
+            <p>
+                AB-
+            </p>
+        </div>
 
-          <div class="case"  id="case8" onclick="scene8()">
-              <p>
-                  AB+
+        <div class="case"  id="case8" onclick="scene8()">
+            <p>
+                AB+
 
-              </p>
-          </div>
-      </div>
+            </p>
+        </div>
+    </div>
 
-      <div class="main">
-          <div class="main__top">
-              <div class="main__top__box" id="box">
-                  <div class="size" id='size'>
+    <div class="main">
+        <div class="main__top">
+            <div class="main__top__box" id="box">
+                <div class="size" id='size'>
 
-                  </div>
-              </div>
-          </div>
+                </div>
+            </div>
+        </div>
 
-              <div class="main__content">
-                  <div class="main__content__line">
-                      <div class="line left">
-                              <div class="people" id="o-I">
-                                  O- <i class="fas fa-user"></i>
-                              </div>
+            <div class="main__content">
+                <div class="main__content__line">
+                    <div class="line left">
+                            <div class="people" id="o-I">
+                                O- <i class="fas fa-user"></i>
+                            </div>
 
-                              <div class="grey" id="o-">
+                            <div class="grey" id="o-">
 
-                              </div>
-                      </div>
+                            </div>
+                    </div>
 
-                      <div class="line right">
-                          <div class="people" id="o+I">
-                               <i class="fas fa-user"></i> O+
-                          </div>
+                    <div class="line right">
+                        <div class="people" id="o+I">
+                             <i class="fas fa-user"></i> O+
+                        </div>
 
-                          <div class="grey" id="o+">
+                        <div class="grey" id="o+">
 
-                          </div>
-                      </div>
-                  </div>
+                        </div>
+                    </div>
+                </div>
 
-                  <div class="main__content__line">
-                      <div class="line left">
-                              <div class="people" id="a-I">
-                                  A- <i class="fas fa-user"></i>
-                              </div>
+                <div class="main__content__line">
+                    <div class="line left">
+                            <div class="people" id="a-I">
+                                A- <i class="fas fa-user"></i>
+                            </div>
 
-                              <div class="grey" id="a-">
+                            <div class="grey" id="a-">
 
-                              </div>
-                      </div>
+                            </div>
+                    </div>
 
-                      <div class="line right">
-                          <div class="people" id="a+I">
-                               <i class="fas fa-user"></i> A+
-                          </div>
+                    <div class="line right">
+                        <div class="people" id="a+I">
+                             <i class="fas fa-user"></i> A+
+                        </div>
 
-                          <div class="grey" id='a+'>
+                        <div class="grey" id='a+'>
 
-                          </div>
-                      </div>
-                  </div>
+                        </div>
+                    </div>
+                </div>
 
-                  <div class="main__content__line">
-                      <div class="line left">
-                              <div class="people" id="b-I">
-                                  B- <i class="fas fa-user"></i>
-                              </div>
+                <div class="main__content__line">
+                    <div class="line left">
+                            <div class="people" id="b-I">
+                                B- <i class="fas fa-user"></i>
+                            </div>
 
-                              <div class="grey" id="b-">
+                            <div class="grey" id="b-">
 
-                              </div>
-                      </div>
+                            </div>
+                    </div>
 
-                      <div class="line right">
-                          <div class="people" id="b+I">
-                               <i class="fas fa-user"></i> B+
-                          </div>
+                    <div class="line right">
+                        <div class="people" id="b+I">
+                             <i class="fas fa-user"></i> B+
+                        </div>
 
-                          <div class="grey" id="b+">
+                        <div class="grey" id="b+">
 
-                          </div>
-                      </div>
-                  </div>
+                        </div>
+                    </div>
+                </div>
 
-                  <div class="main__content__line">
-                      <div class="line left">
-                              <div class="people" id="ab-I">
-                                  AB- <i class="fas fa-user"></i>
-                              </div>
+                <div class="main__content__line">
+                    <div class="line left">
+                            <div class="people" id="ab-I">
+                                <div class="r">AB- <i class="fas fa-user"></i></div>
+                            </div>
 
-                              <div class="grey" id="ab-">
+                            <div class="grey" id="ab-">
 
-                              </div>
-                      </div>
+                            </div>
+                    </div>
 
-                      <div class="line right">
-                          <div class="people" id="ab+I">
-                               <i class="fas fa-user"></i> AB+
-                          </div>
+                    <div class="line right">
+                        <div class="people" id="ab+I">
+                             <i class="fas fa-user"></i> AB+
+                        </div>
 
-                          <div class="grey" id="ab+">
+                        <div class="grey" id="ab+">
 
-                          </div>
-                      </div>
-                  </div>
+                        </div>
+                    </div>
+                </div>
 
-                  <div class="main-line" id ='main_line'>
+                <div class="main-line" id ='main_line'>
 
-                  </div>
-              </div>
-      </div>
-  </div>
+                </div>
+            </div>
+    </div>
+</div>
 
 
 <style>
@@ -320,42 +319,50 @@ transform-origin: top;
 .container {
 display: block;
 margin: 120px auto;
-width: 350px;
+width: 330px;
 }
 
 .cases {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-width: 200px;
+width: 330px;
 flex-wrap: wrap;
-margin: auto;
-height: 100px;
+margin: auto auto 50px auto;
+height: auto;
+
 }
 .cases .case {
 border: 1px solid #B51E23;
 border-radius: 5px;
-text-align: center;
+padding-top: 10px;
+padding-left: 20px;
+padding-bottom: 10px;
 width: 40px;
 height: 40px;
-margin: auto;
+margin: 5px;
 cursor: pointer;
-display: table;
-transition: 1000ms ease-in-out;
 }
 
-.light{
-border: 3px solid  #B6DCF0;
-border-radius: 5px;
-text-align: center;
-width: 40px;
-font-weight:  bold;
-height: 30px;
-margin: auto;
-cursor: pointer;
-display: table;
-transition: 1000ms ease-in-out;
+
+.text{
 }
+
+
+.light{
+border: 3px solid #B51E23;
+border-radius: 5px;
+padding-top: 10px;
+padding-left: 20px;
+padding-bottom: 10px;
+width: 40px;
+height: 40px;
+margin: 5px;
+cursor: pointer;
+font-weight: bold;
+}
+
+/*
 
 .cases .case p {
 display: table-cell;
@@ -367,7 +374,9 @@ border: 2px #B6DCF0 solid;
 .cases .case:hover p {
 font-weight: bold;
 }
+s
 
+*/
 .main {
 display: block;
 width: 320px;
@@ -417,14 +426,27 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 width: 23%;
-margin: 5px;
 font-size: 1em;
+ float: left;
+ margin-bottom: 5px;
 }
+
+
+
+.r{
+    margin-left: -15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
 .main__content__line .line .people i {
 margin: auto 5px auto 5px;
 color: #666666;
 height: 10px;
 width: 10px;
+margin-bottom: 5px;
+margin-right: 5px;
 }
 .main__content__line .line .grey {
 background-color: #666666;
@@ -445,7 +467,7 @@ flex-direction: row-reverse;
 height: 100%;
 bottom: 0;
 position: absolute;
-left: 49%;
+left: 48%;
 width: 11px;
 background-color: #666666;
 border: 1px #666666 solid;
@@ -456,247 +478,247 @@ border: 1px #666666 solid;
 
 
 
-  <script>
-          let box = document.getElementById('box');
-          let main_line = document.getElementById('main_line');
-          let size = document.getElementById('size');
+<script>
+        let box = document.getElementById('box');
+        let main_line = document.getElementById('main_line');
+        let size = document.getElementById('size');
 
-          function scene1(){
-              document.getElementById('size').className = 'size1';
-              document.getElementById('main_line').className = 'main_line1';
-              document.getElementById('o-').className = 'grey1';
-              document.getElementById('o+').className = 'grey1';
-              document.getElementById('a-').className = 'grey1';
-              document.getElementById('a+').className = 'grey1';
-              document.getElementById('b-').className = 'grey1';
-              document.getElementById('b+').className = 'grey1';
-              document.getElementById('ab-').className = 'grey1';
-              document.getElementById('ab+').className = 'grey1';
-              document.getElementById('o-I').className = 'bold';
-              document.getElementById('o+I').className = 'bold';
-              document.getElementById('a-I').className = 'bold';
-              document.getElementById('a+I').className = 'bold';
-              document.getElementById('b+I').className = 'bold';
-              document.getElementById('b-I').className = 'bold';
-              document.getElementById('ab-I').className = 'bold';
-              document.getElementById('ab+I').className = 'bold';
-              document.getElementById('case1').className = 'light';
-              document.getElementById('case2').className = 'case';
-              document.getElementById('case3').className = 'case';
-              document.getElementById('case4').className = 'case';
-              document.getElementById('case5').className = 'case';
-              document.getElementById('case6').className = 'case';
-              document.getElementById('case7').className = 'case';
-              document.getElementById('case8').className = 'case';
-          };
+        function scene1(){
+            document.getElementById('size').className = 'size1';
+            document.getElementById('main_line').className = 'main_line1';
+            document.getElementById('o-').className = 'grey1';
+            document.getElementById('o+').className = 'grey1';
+            document.getElementById('a-').className = 'grey1';
+            document.getElementById('a+').className = 'grey1';
+            document.getElementById('b-').className = 'grey1';
+            document.getElementById('b+').className = 'grey1';
+            document.getElementById('ab-').className = 'grey1';
+            document.getElementById('ab+').className = 'grey1';
+            document.getElementById('o-I').className = 'bold';
+            document.getElementById('o+I').className = 'bold';
+            document.getElementById('a-I').className = 'bold';
+            document.getElementById('a+I').className = 'bold';
+            document.getElementById('b+I').className = 'bold';
+            document.getElementById('b-I').className = 'bold';
+            document.getElementById('ab-I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
+            document.getElementById('case1').className = 'light';
+            document.getElementById('case2').className = 'case';
+            document.getElementById('case3').className = 'case';
+            document.getElementById('case4').className = 'case';
+            document.getElementById('case5').className = 'case';
+            document.getElementById('case6').className = 'case';
+            document.getElementById('case7').className = 'case';
+            document.getElementById('case8').className = 'case';
+        };
 
-           function scene2(){
-              document.getElementById('size').className = 'size2';
-              document.getElementById('main_line').className = 'main_line2';
-              document.getElementById('o-').className = 'grey';
-              document.getElementById('o+').className = 'grey1';
-              document.getElementById('a-').className = 'grey';
-              document.getElementById('a+').className = 'grey1';
-              document.getElementById('b-').className = 'grey';
-              document.getElementById('b+').className = 'grey1';
-              document.getElementById('ab-').className = 'grey';
-              document.getElementById('ab+').className = 'grey1';
-              document.getElementById('o+I').className = 'bold';
-              document.getElementById('a+I').className = 'bold';
-              document.getElementById('b+I').className = 'bold';
-              document.getElementById('ab+I').className = 'bold';
-              document.getElementById('o-I').className = 'people';
-              document.getElementById('a-I').className = 'people';
-              document.getElementById('b-I').className = 'people';
-              document.getElementById('ab-I').className = 'people';
+         function scene2(){
+            document.getElementById('size').className = 'size2';
+            document.getElementById('main_line').className = 'main_line2';
+            document.getElementById('o-').className = 'grey';
+            document.getElementById('o+').className = 'grey1';
+            document.getElementById('a-').className = 'grey';
+            document.getElementById('a+').className = 'grey1';
+            document.getElementById('b-').className = 'grey';
+            document.getElementById('b+').className = 'grey1';
+            document.getElementById('ab-').className = 'grey';
+            document.getElementById('ab+').className = 'grey1';
+            document.getElementById('o+I').className = 'bold';
+            document.getElementById('a+I').className = 'bold';
+            document.getElementById('b+I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'people';
 
-              document.getElementById('case1').className = 'case';
-              document.getElementById('case2').className = 'light';
-              document.getElementById('case3').className = 'case';
-              document.getElementById('case4').className = 'case';
-              document.getElementById('case5').className = 'case';
-              document.getElementById('case6').className = 'case';
-              document.getElementById('case7').className = 'case';
-              document.getElementById('case8').className = 'case';
-          };
-          function scene3(){
-              document.getElementById('size').className = 'size1';
-              document.getElementById('main_line').className = 'main_line1';
-              document.getElementById('o-').className = 'grey';
-              document.getElementById('o+').className = 'grey';
-              document.getElementById('a-').className = 'grey1';
-              document.getElementById('a+').className = 'grey1';
-              document.getElementById('b-').className = 'grey';
-              document.getElementById('b+').className = 'grey';
-              document.getElementById('ab-').className = 'grey1';
-              document.getElementById('ab+').className = 'grey1';
-              document.getElementById('o-I').className = 'people';
-              document.getElementById('o+I').className = 'people';
-              document.getElementById('a-I').className = 'bold';
-              document.getElementById('a+I').className = 'bold';
-              document.getElementById('b+I').className = 'people';
-              document.getElementById('b-I').className = 'people';
-              document.getElementById('ab-I').className = 'bold';
-              document.getElementById('ab+I').className = 'bold';
-
-
-              document.getElementById('case1').className = 'case';
-              document.getElementById('case2').className = 'case';
-              document.getElementById('case3').className = 'light';
-              document.getElementById('case4').className = 'case';
-              document.getElementById('case5').className = 'case';
-              document.getElementById('case6').className = 'case';
-              document.getElementById('case7').className = 'case';
-              document.getElementById('case8').className = 'case';
-          };
-          function scene4(){
-              document.getElementById('size').className = 'size2';
-              document.getElementById('main_line').className = 'main_line2';
-              document.getElementById('o-').className = 'grey';
-              document.getElementById('o+').className = 'grey';
-              document.getElementById('a-').className = 'grey';
-              document.getElementById('a+').className = 'grey1';
-              document.getElementById('b-').className = 'grey';
-              document.getElementById('b+').className = 'grey';
-              document.getElementById('ab-').className = 'grey';
-              document.getElementById('ab+').className = 'grey1';
-              document.getElementById('o-I').className = 'people';
-              document.getElementById('o+I').className = 'people';
-              document.getElementById('a-I').className = 'people';
-              document.getElementById('a+I').className = 'bold';
-              document.getElementById('b+I').className = 'people';
-              document.getElementById('b-I').className = 'people';
-              document.getElementById('ab-I').className = 'people';
-              document.getElementById('ab+I').className = 'bold';
+            document.getElementById('case1').className = 'case';
+            document.getElementById('case2').className = 'light';
+            document.getElementById('case3').className = 'case';
+            document.getElementById('case4').className = 'case';
+            document.getElementById('case5').className = 'case';
+            document.getElementById('case6').className = 'case';
+            document.getElementById('case7').className = 'case';
+            document.getElementById('case8').className = 'case';
+        };
+        function scene3(){
+            document.getElementById('size').className = 'size1';
+            document.getElementById('main_line').className = 'main_line1';
+            document.getElementById('o-').className = 'grey';
+            document.getElementById('o+').className = 'grey';
+            document.getElementById('a-').className = 'grey1';
+            document.getElementById('a+').className = 'grey1';
+            document.getElementById('b-').className = 'grey';
+            document.getElementById('b+').className = 'grey';
+            document.getElementById('ab-').className = 'grey1';
+            document.getElementById('ab+').className = 'grey1';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'bold';
+            document.getElementById('a+I').className = 'bold';
+            document.getElementById('b+I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
 
 
-              document.getElementById('case1').className = 'case';
-              document.getElementById('case2').className = 'case';
-              document.getElementById('case3').className = 'case';
-              document.getElementById('case4').className = 'light';
-              document.getElementById('case5').className = 'case';
-              document.getElementById('case6').className = 'case';
-              document.getElementById('case7').className = 'case';
-              document.getElementById('case8').className = 'case';
-          };
-          function scene5(){
-              document.getElementById('size').className = 'size1';
-              document.getElementById('main_line').className = 'main_line1';
-              document.getElementById('o-').className = 'grey';
-              document.getElementById('o+').className = 'grey';
-              document.getElementById('a-').className = 'grey';
-              document.getElementById('a+').className = 'grey';
-              document.getElementById('b-').className = 'grey1';
-              document.getElementById('b+').className = 'grey1';
-              document.getElementById('ab-').className = 'grey1';
-              document.getElementById('ab+').className = 'grey1';
-              document.getElementById('o-I').className = 'people';
-              document.getElementById('o+I').className = 'people';
-              document.getElementById('a-I').className = 'people';
-              document.getElementById('a+I').className = 'people';
-              document.getElementById('b+I').className = 'bold';
-              document.getElementById('b-I').className = 'bold';
-              document.getElementById('ab-I').className = 'bold';
-              document.getElementById('ab+I').className = 'bold';
+            document.getElementById('case1').className = 'case';
+            document.getElementById('case2').className = 'case';
+            document.getElementById('case3').className = 'light';
+            document.getElementById('case4').className = 'case';
+            document.getElementById('case5').className = 'case';
+            document.getElementById('case6').className = 'case';
+            document.getElementById('case7').className = 'case';
+            document.getElementById('case8').className = 'case';
+        };
+        function scene4(){
+            document.getElementById('size').className = 'size2';
+            document.getElementById('main_line').className = 'main_line2';
+            document.getElementById('o-').className = 'grey';
+            document.getElementById('o+').className = 'grey';
+            document.getElementById('a-').className = 'grey';
+            document.getElementById('a+').className = 'grey1';
+            document.getElementById('b-').className = 'grey';
+            document.getElementById('b+').className = 'grey';
+            document.getElementById('ab-').className = 'grey';
+            document.getElementById('ab+').className = 'grey1';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'bold';
+            document.getElementById('b+I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'people';
+            document.getElementById('ab+I').className = 'bold';
 
 
-              document.getElementById('case1').className = 'case';
-              document.getElementById('case2').className = 'case';
-              document.getElementById('case3').className = 'case';
-              document.getElementById('case4').className = 'case';
-              document.getElementById('case5').className = 'light';
-              document.getElementById('case6').className = 'case';
-              document.getElementById('case7').className = 'case';
-              document.getElementById('case8').className = 'case';
-          };
-          function scene6(){
-              document.getElementById('size').className = 'size2';
-              document.getElementById('main_line').className = 'main_line2';
-              document.getElementById('o-').className = 'grey';
-              document.getElementById('o+').className = 'grey';
-              document.getElementById('a-').className = 'grey';
-              document.getElementById('a+').className = 'grey';
-              document.getElementById('b-').className = 'grey';
-              document.getElementById('b+').className = 'grey1';
-              document.getElementById('ab-').className = 'grey';
-              document.getElementById('ab+').className = 'grey1';
-              ddocument.getElementById('o-I').className = 'people';
-              document.getElementById('o+I').className = 'people';
-              document.getElementById('a-I').className = 'people';
-              document.getElementById('a+I').className = 'people';
-              document.getElementById('b+I').className = 'bold';
-              document.getElementById('b-I').className = 'people';
-              document.getElementById('ab-I').className = 'people';
-              document.getElementById('ab+I').className = 'bold';
+            document.getElementById('case1').className = 'case';
+            document.getElementById('case2').className = 'case';
+            document.getElementById('case3').className = 'case';
+            document.getElementById('case4').className = 'light';
+            document.getElementById('case5').className = 'case';
+            document.getElementById('case6').className = 'case';
+            document.getElementById('case7').className = 'case';
+            document.getElementById('case8').className = 'case';
+        };
+        function scene5(){
+            document.getElementById('size').className = 'size1';
+            document.getElementById('main_line').className = 'main_line1';
+            document.getElementById('o-').className = 'grey';
+            document.getElementById('o+').className = 'grey';
+            document.getElementById('a-').className = 'grey';
+            document.getElementById('a+').className = 'grey';
+            document.getElementById('b-').className = 'grey1';
+            document.getElementById('b+').className = 'grey1';
+            document.getElementById('ab-').className = 'grey1';
+            document.getElementById('ab+').className = 'grey1';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'people';
+            document.getElementById('b+I').className = 'bold';
+            document.getElementById('b-I').className = 'bold';
+            document.getElementById('ab-I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
 
 
-              document.getElementById('case1').className = 'case';
-              document.getElementById('case2').className = 'case';
-              document.getElementById('case3').className = 'case';
-              document.getElementById('case4').className = 'case';
-              document.getElementById('case5').className = 'case';
-              document.getElementById('case6').className = 'light';
-              document.getElementById('case7').className = 'case';
-              document.getElementById('case8').className = 'case';
-          };
-          function scene7(){
-              document.getElementById('size').className = 'size1';
-              document.getElementById('main_line').className = 'main_line1';
-              document.getElementById('o-').className = 'grey';
-              document.getElementById('o+').className = 'grey';
-              document.getElementById('a-').className = 'grey';
-              document.getElementById('a+').className = 'grey';
-              document.getElementById('b-').className = 'grey';
-              document.getElementById('b+').className = 'grey';
-              document.getElementById('ab-').className = 'grey1';
-              document.getElementById('ab+').className = 'grey1';
-              document.getElementById('o-I').className = 'people';
-              document.getElementById('o+I').className = 'people';
-              document.getElementById('a-I').className = 'people';
-              document.getElementById('a+I').className = 'people';
-              document.getElementById('b+I').className = 'people';
-              document.getElementById('b-I').className = 'people';
-              document.getElementById('ab-I').className = 'bold';
-              document.getElementById('ab+I').className = 'bold';
+            document.getElementById('case1').className = 'case';
+            document.getElementById('case2').className = 'case';
+            document.getElementById('case3').className = 'case';
+            document.getElementById('case4').className = 'case';
+            document.getElementById('case5').className = 'light';
+            document.getElementById('case6').className = 'case';
+            document.getElementById('case7').className = 'case';
+            document.getElementById('case8').className = 'case';
+        };
+        function scene6(){
+            document.getElementById('size').className = 'size2';
+            document.getElementById('main_line').className = 'main_line2';
+            document.getElementById('o-').className = 'grey';
+            document.getElementById('o+').className = 'grey';
+            document.getElementById('a-').className = 'grey';
+            document.getElementById('a+').className = 'grey';
+            document.getElementById('b-').className = 'grey';
+            document.getElementById('b+').className = 'grey1';
+            document.getElementById('ab-').className = 'grey';
+            document.getElementById('ab+').className = 'grey1';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'people';
+            document.getElementById('b+I').className = 'bold';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'people';
+            document.getElementById('ab+I').className = 'bold';
 
 
-              document.getElementById('case1').className = 'case';
-              document.getElementById('case2').className = 'case';
-              document.getElementById('case3').className = 'case';
-              document.getElementById('case4').className = 'case';
-              document.getElementById('case5').className = 'case';
-              document.getElementById('case6').className = 'case';
-              document.getElementById('case7').className = 'light';
-              document.getElementById('case8').className = 'case';
-          };
-          function scene8(){
-              document.getElementById('size').className = 'size2';
-              document.getElementById('main_line').className = 'main_line2';
-              document.getElementById('o-').className = 'grey';
-              document.getElementById('o+').className = 'grey';
-              document.getElementById('a-').className = 'grey';
-              document.getElementById('a+').className = 'grey';
-              document.getElementById('b-').className = 'grey';
-              document.getElementById('b+').className = 'grey';
-              document.getElementById('ab-').className = 'grey';
-              document.getElementById('ab+').className = 'grey1';
-              document.getElementById('o-I').className = 'people';
-              document.getElementById('o+I').className = 'people';
-              document.getElementById('a-I').className = 'people';
-              document.getElementById('a+I').className = 'people';
-              document.getElementById('b+I').className = 'people';
-              document.getElementById('b-I').className = 'people';
-              document.getElementById('ab-I').className = 'people';
-              document.getElementById('ab+I').className = 'bold';
+            document.getElementById('case1').className = 'case';
+            document.getElementById('case2').className = 'case';
+            document.getElementById('case3').className = 'case';
+            document.getElementById('case4').className = 'case';
+            document.getElementById('case5').className = 'case';
+            document.getElementById('case6').className = 'light';
+            document.getElementById('case7').className = 'case';
+            document.getElementById('case8').className = 'case';
+        };
+        function scene7(){
+            document.getElementById('size').className = 'size1';
+            document.getElementById('main_line').className = 'main_line1';
+            document.getElementById('o-').className = 'grey';
+            document.getElementById('o+').className = 'grey';
+            document.getElementById('a-').className = 'grey';
+            document.getElementById('a+').className = 'grey';
+            document.getElementById('b-').className = 'grey';
+            document.getElementById('b+').className = 'grey';
+            document.getElementById('ab-').className = 'grey1';
+            document.getElementById('ab+').className = 'grey1';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'people';
+            document.getElementById('b+I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
 
 
-              document.getElementById('case1').className = 'case';
-              document.getElementById('case2').className = 'case';
-              document.getElementById('case3').className = 'case';
-              document.getElementById('case4').className = 'case';
-              document.getElementById('case5').className = 'case';
-              document.getElementById('case6').className = 'case';
-              document.getElementById('case7').className = 'case';
-              document.getElementById('case8').className = 'light';
-          }
-  </script>
+            document.getElementById('case1').className = 'case';
+            document.getElementById('case2').className = 'case';
+            document.getElementById('case3').className = 'case';
+            document.getElementById('case4').className = 'case';
+            document.getElementById('case5').className = 'case';
+            document.getElementById('case6').className = 'case';
+            document.getElementById('case7').className = 'light';
+            document.getElementById('case8').className = 'case';
+        };
+        function scene8(){
+            document.getElementById('size').className = 'size2';
+            document.getElementById('main_line').className = 'main_line2';
+            document.getElementById('o-').className = 'grey';
+            document.getElementById('o+').className = 'grey';
+            document.getElementById('a-').className = 'grey';
+            document.getElementById('a+').className = 'grey';
+            document.getElementById('b-').className = 'grey';
+            document.getElementById('b+').className = 'grey';
+            document.getElementById('ab-').className = 'grey';
+            document.getElementById('ab+').className = 'grey1';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'people';
+            document.getElementById('b+I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'people';
+            document.getElementById('ab+I').className = 'bold';
+
+
+            document.getElementById('case1').className = 'case';
+            document.getElementById('case2').className = 'case';
+            document.getElementById('case3').className = 'case';
+            document.getElementById('case4').className = 'case';
+            document.getElementById('case5').className = 'case';
+            document.getElementById('case6').className = 'case';
+            document.getElementById('case7').className = 'case';
+            document.getElementById('case8').className = 'light';
+        }
+</script>
