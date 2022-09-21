@@ -1,13 +1,12 @@
 
 
   <div class="container">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 
     <p>
-        Savez-vous à qui vous pouvez donner votre groupe sanguin?
+        Sélectionnez votre groupe sanguin pour voir sa compatibilité.
     </p>
     <div class="cases">
         <div class="case" id="case1" onclick="scene1()">
@@ -55,7 +54,7 @@
             <div class="main__content">
                 <div class="main__content__line">
                     <div class="line left">
-                            <div class="peopleL" id="o-I">
+                            <div class="people" id="o-I">
                                 <p class="text" id="text">O-</p> <i class="fas fa-user"></i>
                             </div>
 
@@ -65,7 +64,7 @@
                     </div>
 
                     <div class="line right">
-                        <div class="peopleR" id="o+I">
+                        <div class="people" id="o+I">
                             <i class="fas fa-user"></i> <p class="text" id="text">O+</p>
                         </div>
 
@@ -77,7 +76,7 @@
 
                 <div class="main__content__line">
                     <div class="line left">
-                            <div class="people peopleL" id="a-I">
+                            <div class="people" id="a-I">
                                 <p class="text" id="text">A-</p> <i class="fas fa-user"></i>
                             </div>
 
@@ -87,7 +86,7 @@
                     </div>
 
                     <div class="line right">
-                        <div class="people peopleR" id="a+I">
+                        <div class="people" id="a+I">
                             <i class="fas fa-user"></i>  <p class="text" id="text">A+</p>
                         </div>
 
@@ -99,7 +98,7 @@
 
                 <div class="main__content__line">
                     <div class="line left">
-                            <div class="people peopleL" id="b-I">
+                            <div class="people" id="b-I">
                                 <p class="text" id="text">B-</p> <i class="fas fa-user"></i>
                             </div>
 
@@ -109,7 +108,7 @@
                     </div>
 
                     <div class="line right">
-                        <div class="people peopleR" id="b+I">
+                        <div class="people" id="b+I">
                             <i class="fas fa-user"></i>  <p class="text" id="text">B+</p>
                         </div>
 
@@ -121,7 +120,7 @@
 
                 <div class="main__content__line">
                     <div class="line left">
-                            <div class="people peopleL" id="ab-I">
+                            <div class="people" id="ab-I">
                                 <p class="text" id="text">AB-</p> <i class="fas fa-user"></i>
                             </div>
 
@@ -131,7 +130,7 @@
                     </div>
 
                     <div class="line right">
-                        <div class="people peopleR" id="ab+I">
+                        <div class="people" id="ab+I">
                             <i class="fas fa-user"></i> <p class="text" id="text">AB+</p>
                         </div>
 
@@ -151,371 +150,331 @@
 
 <style>
 
+
 @keyframes line {
-    0% {
-      transform: scaleY(0);
-    }
+0% {
+  transform: scaleY(0);
+}
 
-    100% {
-      transform: scaleY(1);
-    }
-    }
+100% {
+  transform: scaleY(1);
+}
+}
 
-    @keyframes line2 {
-    0% {
-      transform: scaleY(0);
-    }
+@keyframes line2 {
+0% {
+  transform: scaleY(0);
+}
 
-    100% {
-      transform: scaleY(1);
-    }
-    }
+100% {
+  transform: scaleY(1);
+}
+}
 
 
-    @keyframes size {
-    0% {
-      height: 0%;
-    }
+@keyframes size {
+0% {
+  height: 0%;
+}
 
-    33% {
-      height: 33%;
-    }
+33% {
+  height: 33%;
+}
 
-    66% {
-      height: 60%;
-    }
+66% {
+  height: 60%;
+}
 
-    100% {
-      height: 40%;
-    }
-    }
+100% {
+  height: 40%;
+}
+}
 
-    @keyframes size2 {
-    0% {
-      height: 0%;
-    }
+@keyframes size2 {
+0% {
+  height: 0%;
+}
 
-    33% {
-      height: 33%;
-    }
+33% {
+  height: 33%;
+}
 
-    66% {
-      height: 60%;
-    }
+66% {
+  height: 60%;
+}
 
-    100% {
-      height: 55%;
-    }
-    }
+100% {
+  height: 55%;
+}
+}
 
-    @keyframes move {
-    0% {
-      width: 0%;
-      margin-left:  0;
-    }
+@keyframes move {
+0% {
+  width: 0%;
+  margin: auto 0;
+}
 
-    100% {
-      width: 100%;
-      margin-left:  0;
-    }
-    }
-    @-webkit-keyframes moveL {
-    0% {
-      width: 0%;
-      margin: 0;
-    }
-    100% {
-      width: 100%;
-      margin: 0;
-    }
-    }
-    @-webkit-keyframes moveLL {
-        0% {
-          width: 0%;
-          margin: 0 0 auto auto ;
-        }
-        100% {
-          width: 100%;
-          margin: 0 0 auto auto ;
-        }
-    }
+100% {
+  width: 100%;
+  margin: auto 0;
+}
+}
+@-webkit-keyframes moveL {
+0% {
+  width: 0%;
+  margin: auto 0;
+}
+100% {
+  width: 100%;
+  margin: auto 0;
+}
+}
 
-    html, body {
-    box-sizing: border-box;
-    }
+html, body {
+box-sizing: border-box;
+}
 
-    .size1 {
+.size1 {
+width: 100%;
+background-color: #B51E23;
+bottom: 0;
+position: absolute;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+animation: size 2s ease-in-out;
+height: 40%;
+}
+
+.size2 {
+width: 100%;
+background-color: #B51E23;
+bottom: 0;
+position: absolute;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+animation: size2 2s ease-in-out;
+height: 55%;
+}
+
+.text{
+    margin: -5px;
+}
+
+
+.bold {
+font-weight: bold;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 25%;
+margin-right: 5px;
+color: black;
+}
+
+
+.bold i,
+.bold .text{
+    color: black;
+}
+
+.bold .text{
+    margin: -5px;
+
+}
+
+.grey1 {
+background-color: #B51E23;
+height: 10px;
+border: 1px  #B51E23 solid;
+margin: auto auto 0 auto;
+width: 70%;
+transition-timing-function: ease-in-out;
+-webkit-animation-name: move;
+        animation-name: move;
+-webkit-animation-duration: 2s;
+        animation-duration: 2000ms;
+        overflow: hidden;
+}
+
+.main_line1 {
+  transform: scaleY(1);
+  height: 100%;
+bottom: 0;
+position: absolute;
+left: 49%;
+width: 13px;
+background-color: #B51E23;
+border: 1px #666666 solid;
+animation: line 2s ease-in-out;
+transform-origin: top;
+}
+
+.main_line2 {
+  transform: scaleY(1);
+  height: 100%;
+bottom: 0;
+position: absolute;
+left: 49%;
+width: 11px;
+background-color: #B51E23;
+border: 1px #666666 solid;
+animation: line2 2000ms ease-in-out;
+transform-origin: top;
+}
+
+.container {
+display: block;
+margin: 120px auto;
+width: 330px;
+}
+
+.cases {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 250px;
+flex-wrap: wrap;
+margin: auto auto 50px auto;
+height: auto;
+
+}
+.cases .case {
+border: 1px solid #B51E23;
+display: table;
+width: 50px;
+height: 50px;
+margin: 5px;
+cursor: pointer;
+}
+
+
+.case-txt{
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+}
+
+
+.light{
+border: 3px solid #B51E23;
+display: table;
+width: 50px;
+height: 50px;
+margin: 5px;
+cursor: pointer;
+font-weight: bold;
+}
+
+
+
+/*
+
+.cases .case p {
+display: table-cell;
+vertical-align: middle;
+}
+.cases .case:hover {
+border: 2px #B6DCF0 solid;
+}
+.cases .case:hover p {
+font-weight: bold;
+}
+s
+
+*/
+.main {
+display: block;
+width: 320px;
+margin: 20px auto;
+}
+.main__top {
+padding-left: 10px;
+}
+.main__top__box{
+margin: auto;
+height: 90px;
+width: 69px;
+border: 10px solid #B6DCF0;
+border-radius: 15px 15px 25px 25px;
+background-color: #666666;
+position: relative;
+}
+
+.main__top__box .size {
+width: 100%;
+background-color: #B51E23;
+bottom: 0;
+position: absolute;
+border-radius: 15px;
+}
+.main__content {
+display: block;
+position: relative;
+height: 200px;
+}
+.main__content__line {
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: space-between;
+}
+.main__content__line .line {
+width: 50%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 15px;
+margin: 20px auto;
+}
+.main__content__line .line .people {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 25%;
+font-size: 1em;
+ float: left;
+
+}
+
+
+
+.r{
     width: 100%;
-    background-color: #B51E23;
-    bottom: 0;
-    position: absolute;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    animation: size 2s ease-in-out;
-    height: 40%;
-    }
-
-    .size2 {
-    width: 100%;
-    background-color: #B51E23;
-    bottom: 0;
-    position: absolute;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    animation: size2 2s ease-in-out;
-    height: 55%;
-    }
-
-
-
-    .main_line1 {
-      transform: scaleY(1);
-      height: 100%;
-    bottom: 0;
-    position: absolute;
-    left: 49%;
-    width: 13px;
-    background-color: #B51E23;
-    border: none;
-    animation: line 1s ease-in-out;
-    transform-origin: top;
-    }
-
-    .main_line2 {
-        transform: scaleY(1);
-        height: 100%;
-      bottom: 0;
-      position: absolute;
-      left: 49%;
-      width: 13px;
-      background-color: #B51E23;
-      border: 1px #666666 solid;
-      animation: line2 1s ease-in-out;
-      transform-origin: top;
-      }
-
-    .container {
-    display: block;
-    margin: 120px auto;
-    width: 330px;
-    }
-
-    .cases {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 280px;
-    flex-wrap: wrap;
-    margin: 40px auto;
-    height: auto;
+}
 
-    }
-    .cases .case {
-    border: 1px solid #B51E23;
-    border-radius: 10px;
-    display: table;
-    background-color: #F7F7F7;
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    cursor: pointer;
-    }
+.main__content__line .line .people i {
+color: #666666;
+}
 
-    .case:hover{
-        border: 2px #B6DCF0 solid;
-        font-weight: bold;
-    }
-
-
-    .case-txt{
-       display: table-cell;
-       vertical-align: middle;
-       text-align: center;
-    }
-
-
-    .light{
-    border: 3px solid #B51E23;
-    display: table;
-    background-color: #F7F7F7;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    }
-
-    .main {
-    display: block;
-    width: 320px;
-    margin: 50px auto;
-    }
-    .main__top {
-    padding-left: 10px;
-    }
-    .main__top__box{
-    margin: auto;
-    height: 90px;
-    width: 69px;
-    border: 10px solid #B6DCF0;
-    border-radius: 15px 15px 25px 25px;
-    background-color: #666666;
-    position: relative;
-    }
-
-    .main__top__box .size {
-    width: 100%;
-    background-color: #B51E23;
-    bottom: 0;
-    position: absolute;
-    border-radius: 15px;
-    }
-    .main__content {
-    display: block;
-    position: relative;
-    height: 200px;
-    }
-    .main__content__line {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 2px;
-    justify-content: space-between;
-    }
-
-
-    .main__content__line .line {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 15px;
-    margin: 20px auto;
-    position: relative;
-    }
-
-
-    .main__content__line .line .peopleL {
-    margin-left: -70px;
-    display: table;
-    margin-top: -10px;
-    }
-
-
-    .boldL {
-        margin-left: -70px;
-        display: table;
-        position: absolute;
-        margin-top: -10px;
-    }
-    .boldL i{
-        color: black;
-        display: table-cell;
-    }
-
-    .boldL .text{
-        color: black;
-        display: table-cell;
-    }
-
-    .main__content__line .line .peopleL .text{
-        display: table-cell;
-        color: #666666;
-    }
-
-    .main__content__line .line .peopleL i{
-        display: table-cell;
-        color: #666666;
-    }
-
-    .main__content__line .line .peopleR {
-        margin-right: -80px;
-        display: table;
-        margin-top: -10px;
-     }
-
-    .main__content__line .line .peopleR .text{
-        display: table-cell;
-        color: #666666;
-
-    }
-
-    .main__content__line .line .peopleR i{
-        display: table-cell;
-        color: #666666;
-    }
-
-
-    .boldR{
-        margin-right: -80px;
-        display: table;
-        margin-top: -10px;
-    }
-
-    .boldR .text{
-        color: black;
-        display: table-cell;
-    }
-
-    .boldR i{
-        color: black;
-        display: table-cell;
-    }
-
-    .main__content__line .line .grey {
-    background-color: #666666;
-    height: 10px;
-    width: 100%;
-    transition-timing-function: ease-in-out;
-    -webkit-animation-name: moveL;
-            animation-name: moveL;
-    -webkit-animation-duration: 1500ms;
-            animation-duration: 1500ms;
-    }
-
-    .grey1 {
-        background-color: #B51E23;
-        height: 10px;
-         width: 100%;
-        transition-timing-function: ease-in-out;
-        -webkit-animation-name: move;
-                animation-name: move;
-        -webkit-animation-duration: 1500ms;
-                animation-duration: 1500ms;
-                overflow: hidden;
-        }
-
-        .greyLL {
-            background-color: #B51E23;
-            height: 10px;
-            width: 100%;
-            transition-timing-function: ease-in-out;
-            -webkit-animation-name: moveLL;
-                    animation-name: moveLL;
-            -webkit-animation-duration: 1500ms;
-                    animation-duration: 1500ms;
-                    overflow: hidden;
-            }
-
-    .main__content__line .right {
-    flex-direction: row-reverse;
-    }
-
-
-
-    .main__content .main-line {
-    height: 100%;
-    margin-bottom: 0px;
-    position: absolute;
-    border: none;
-    left: 49%;
-    width: 13px;
-    background-color: #666666;
-    border: 1px #666666 solid;
-    }/*# sourceMappingURL=main.css.map */
-
+.main__content__line .line .grey {
+background-color: #666666;
+height: 10px;
+border: 1px #666666 solid;
+margin: auto auto 0 auto;
+width: 70%;
+overflow: hidden;
+transition-timing-function: ease-in-out;
+-webkit-animation-name: moveL;
+        animation-name: moveL;
+-webkit-animation-duration: 2s;
+        animation-duration: 2s;
+}
+.main__content__line .right {
+flex-direction: row-reverse;
+}
+.main__content .main-line {
+height: 100%;
+bottom: 0;
+position: absolute;
+left: 49%;
+width: 13px;
+background-color: #666666;
+border: 1px #666666 solid;
+}/*# sourceMappingURL=main.css.map */
 </style>
+
 
 
 
@@ -528,22 +487,22 @@
         function scene1(){
             document.getElementById('size').className = 'size1';
             document.getElementById('main_line').className = 'main_line1';
-            document.getElementById('o-').className = 'greyLL';
+            document.getElementById('o-').className = 'grey1';
             document.getElementById('o+').className = 'grey1';
-            document.getElementById('a-').className = 'greyLL';
+            document.getElementById('a-').className = 'grey1';
             document.getElementById('a+').className = 'grey1';
-            document.getElementById('b-').className = 'greyLL';
+            document.getElementById('b-').className = 'grey1';
             document.getElementById('b+').className = 'grey1';
-            document.getElementById('ab-').className = 'greyLL';
+            document.getElementById('ab-').className = 'grey1';
             document.getElementById('ab+').className = 'grey1';
-            document.getElementById('o-I').className = 'boldL';
-            document.getElementById('o+I').className = 'boldR';
-            document.getElementById('a-I').className = 'boldL';
-            document.getElementById('a+I').className = 'boldR';
-            document.getElementById('b+I').className = 'boldR';
-            document.getElementById('b-I').className = 'boldL';
-            document.getElementById('ab-I').className = 'boldL';
-            document.getElementById('ab+I').className = 'boldR';
+            document.getElementById('o-I').className = 'bold';
+            document.getElementById('o+I').className = 'bold';
+            document.getElementById('a-I').className = 'bold';
+            document.getElementById('a+I').className = 'bold';
+            document.getElementById('b+I').className = 'bold';
+            document.getElementById('b-I').className = 'bold';
+            document.getElementById('ab-I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
             document.getElementById('case1').className = 'light';
             document.getElementById('case2').className = 'case';
             document.getElementById('case3').className = 'case';
@@ -565,14 +524,14 @@
             document.getElementById('b+').className = 'grey1';
             document.getElementById('ab-').className = 'grey';
             document.getElementById('ab+').className = 'grey1';
-            document.getElementById('o+I').className = 'boldR';
-            document.getElementById('a+I').className = 'boldR';
-            document.getElementById('b+I').className = 'boldR';
-            document.getElementById('ab+I').className = 'boldR';
-            document.getElementById('o-I').className = 'peopleL';
-            document.getElementById('a-I').className = 'peopleL';
-            document.getElementById('b-I').className = 'peopleL';
-            document.getElementById('ab-I').className = 'peopleL';
+            document.getElementById('o+I').className = 'bold';
+            document.getElementById('a+I').className = 'bold';
+            document.getElementById('b+I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'people';
 
             document.getElementById('case1').className = 'case';
             document.getElementById('case2').className = 'light';
@@ -588,20 +547,20 @@
             document.getElementById('main_line').className = 'main_line1';
             document.getElementById('o-').className = 'grey';
             document.getElementById('o+').className = 'grey';
-            document.getElementById('a-').className = 'greyLL';
+            document.getElementById('a-').className = 'grey1';
             document.getElementById('a+').className = 'grey1';
             document.getElementById('b-').className = 'grey';
             document.getElementById('b+').className = 'grey';
-            document.getElementById('ab-').className = 'greyLL';
+            document.getElementById('ab-').className = 'grey1';
             document.getElementById('ab+').className = 'grey1';
-            document.getElementById('o-I').className = 'peopleL';
-            document.getElementById('o+I').className = 'peopleR';
-            document.getElementById('a-I').className = 'boldL';
-            document.getElementById('a+I').className = 'boldR';
-            document.getElementById('b+I').className = 'peopleR';
-            document.getElementById('b-I').className = 'peopleL';
-            document.getElementById('ab-I').className = 'boldL';
-            document.getElementById('ab+I').className = 'boldR';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'bold';
+            document.getElementById('a+I').className = 'bold';
+            document.getElementById('b+I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
 
 
             document.getElementById('case1').className = 'case';
@@ -624,14 +583,14 @@
             document.getElementById('b+').className = 'grey';
             document.getElementById('ab-').className = 'grey';
             document.getElementById('ab+').className = 'grey1';
-            document.getElementById('o-I').className = 'peopleL';
-            document.getElementById('o+I').className = 'peopleR';
-            document.getElementById('a-I').className = 'peopleL';
-            document.getElementById('a+I').className = 'boldR';
-            document.getElementById('b+I').className = 'peopleR';
-            document.getElementById('b-I').className = 'peopleL';
-            document.getElementById('ab-I').className = 'peopleL';
-            document.getElementById('ab+I').className = 'boldR';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'bold';
+            document.getElementById('b+I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'people';
+            document.getElementById('ab+I').className = 'bold';
 
 
             document.getElementById('case1').className = 'case';
@@ -650,18 +609,18 @@
             document.getElementById('o+').className = 'grey';
             document.getElementById('a-').className = 'grey';
             document.getElementById('a+').className = 'grey';
-            document.getElementById('b-').className = 'greyLL';
+            document.getElementById('b-').className = 'grey1';
             document.getElementById('b+').className = 'grey1';
-            document.getElementById('ab-').className = 'greyLL';
+            document.getElementById('ab-').className = 'grey1';
             document.getElementById('ab+').className = 'grey1';
-            document.getElementById('o-I').className = 'peopleL';
-            document.getElementById('o+I').className = 'peopleR';
-            document.getElementById('a-I').className = 'peopleL';
-            document.getElementById('a+I').className = 'peopleR';
-            document.getElementById('b+I').className = 'boldR';
-            document.getElementById('b-I').className = 'boldL';
-            document.getElementById('ab-I').className = 'boldL';
-            document.getElementById('ab+I').className = 'boldR';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'people';
+            document.getElementById('b+I').className = 'bold';
+            document.getElementById('b-I').className = 'bold';
+            document.getElementById('ab-I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
 
 
             document.getElementById('case1').className = 'case';
@@ -684,14 +643,14 @@
             document.getElementById('b+').className = 'grey1';
             document.getElementById('ab-').className = 'grey';
             document.getElementById('ab+').className = 'grey1';
-            document.getElementById('o-I').className = 'peopleL';
-            document.getElementById('o+I').className = 'peopleR';
-            document.getElementById('a-I').className = 'peopleL';
-            document.getElementById('a+I').className = 'peopleR';
-            document.getElementById('b+I').className = 'boldR';
-            document.getElementById('b-I').className = 'peopleL';
-            document.getElementById('ab-I').className = 'peopleL';
-            document.getElementById('ab+I').className = 'boldR';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'people';
+            document.getElementById('b+I').className = 'bold';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'people';
+            document.getElementById('ab+I').className = 'bold';
 
 
             document.getElementById('case1').className = 'case';
@@ -712,16 +671,16 @@
             document.getElementById('a+').className = 'grey';
             document.getElementById('b-').className = 'grey';
             document.getElementById('b+').className = 'grey';
-            document.getElementById('ab-').className = 'greyLL';
+            document.getElementById('ab-').className = 'grey1';
             document.getElementById('ab+').className = 'grey1';
-            document.getElementById('o-I').className = 'peopleL';
-            document.getElementById('o+I').className = 'peopleR';
-            document.getElementById('a-I').className = 'peopleL';
-            document.getElementById('a+I').className = 'peopleR';
-            document.getElementById('b+I').className = 'peopleR';
-            document.getElementById('b-I').className = 'peopleL';
-            document.getElementById('ab-I').className = 'boldL';
-            document.getElementById('ab+I').className = 'boldR';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'people';
+            document.getElementById('b+I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'bold';
+            document.getElementById('ab+I').className = 'bold';
 
 
             document.getElementById('case1').className = 'case';
@@ -744,14 +703,14 @@
             document.getElementById('b+').className = 'grey';
             document.getElementById('ab-').className = 'grey';
             document.getElementById('ab+').className = 'grey1';
-            document.getElementById('o-I').className = 'peopleL';
-            document.getElementById('o+I').className = 'peopleR';
-            document.getElementById('a-I').className = 'peopleL';
-            document.getElementById('a+I').className = 'peopleR';
-            document.getElementById('b+I').className = 'peopleR';
-            document.getElementById('b-I').className = 'peopleL';
-            document.getElementById('ab-I').className = 'peopleL';
-            document.getElementById('ab+I').className = 'boldR';
+            document.getElementById('o-I').className = 'people';
+            document.getElementById('o+I').className = 'people';
+            document.getElementById('a-I').className = 'people';
+            document.getElementById('a+I').className = 'people';
+            document.getElementById('b+I').className = 'people';
+            document.getElementById('b-I').className = 'people';
+            document.getElementById('ab-I').className = 'people';
+            document.getElementById('ab+I').className = 'bold';
 
 
             document.getElementById('case1').className = 'case';
