@@ -1,2 +1,4 @@
-# slainghi
-simple app to know who you can give your blood to as a blood donor
+# Blood donor
+->Select your blood group and find out which one you can donate blood to
+->Built with Javascript
+->Feel free to contribute
