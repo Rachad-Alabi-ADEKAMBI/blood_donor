@@ -5,13 +5,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-
+<h1>
+    Blood donor
+</h1>
     <p>
-        Savez-vous à qui vous pouvez donner votre groupe sanguin?
+        Select your blood group and find out which one you can donate blood to
     </p>
     <div class="cases">
         <div class="case" id="case1" onclick="scene1()">
-          <p class="case-txt"> 0-</p>
+          <p class="case-txt"> O-</p>
         </div>
 
         <div class="case" id="case2" onclick="scene2()">
@@ -121,8 +123,8 @@
 
                 <div class="main__content__line">
                     <div class="line left">
-                            <div class="people peopleL" id="ab-I">
-                                <p class="text" id="text">AB-</p> <i class="fas fa-user"></i>
+                            <div class=" people peopleL LL" id="ab-I">
+                                <p class="text" id="text">AB-</p> <i class="fas fa-user " id="ff"></i>
                             </div>
 
                             <div class="grey" id="ab-">
@@ -244,6 +246,11 @@
     box-sizing: border-box;
     }
 
+    h1{
+        color: #B51E23;
+        text-decoration: underline;
+    }
+
     .size1 {
     width: 100%;
     background-color: #B51E23;
@@ -265,8 +272,6 @@
     animation: size2 2s ease-in-out;
     height: 55%;
     }
-
-
 
     .main_line1 {
       transform: scaleY(1);
@@ -296,7 +301,7 @@
 
     .container {
     display: block;
-    margin: 120px auto;
+    margin: 10px auto;
     width: 330px;
     }
 
@@ -306,7 +311,7 @@
     justify-content: space-between;
     width: 280px;
     flex-wrap: wrap;
-    margin: 40px auto;
+    margin: 20px auto;
     height: auto;
 
     }
@@ -348,8 +353,8 @@
 
     .main {
     display: block;
-    width: 320px;
-    margin: 50px auto;
+    width: 270px;
+    margin: 20px auto;
     }
     .main__top {
     padding-left: 10px;
@@ -397,17 +402,27 @@
 
 
     .main__content__line .line .peopleL {
-    margin-left: -70px;
+    margin-left: -80px;
     display: table;
     margin-top: -10px;
+    width: 70px;
+    }
+
+    .LL{
+    display: table;
+    margin-top: -10px;
+    width: 70px;
+        margin-left: -80px;
     }
 
 
     .boldL {
-        margin-left: -70px;
+        margin-left: -80px;
         display: table;
         position: absolute;
         margin-top: -10px;
+        width: 70px;
+        padding-right: 0;
     }
     .boldL i{
         color: black;
@@ -422,23 +437,31 @@
     .main__content__line .line .peopleL .text{
         display: table-cell;
         color: #666666;
+        position: relative;
     }
 
     .main__content__line .line .peopleL i{
         display: table-cell;
         color: #666666;
+        margin-right: -10px;
+    }
+
+    #ff{
+        margin-left: -30px;
+        position: absolute;
+        margin-top: 2px;
     }
 
     .main__content__line .line .peopleR {
-        margin-right: -80px;
+        margin-right: -90px;
         display: table;
         margin-top: -10px;
+        width: 70px;
      }
 
     .main__content__line .line .peopleR .text{
         display: table-cell;
         color: #666666;
-
     }
 
     .main__content__line .line .peopleR i{
@@ -448,9 +471,10 @@
 
 
     .boldR{
-        margin-right: -80px;
+        margin-right: -90px;
         display: table;
         margin-top: -10px;
+        width: 70px;
     }
 
     .boldR .text{
@@ -506,7 +530,7 @@
 
     .main__content .main-line {
     height: 100%;
-    margin-bottom: 0px;
+    top: 0;
     position: absolute;
     border: none;
     left: 49%;
@@ -514,6 +538,25 @@
     background-color: #666666;
     border: 1px #666666 solid;
     }/*# sourceMappingURL=main.css.map */
+
+
+    @media(max-width: 400px){
+           .container{
+            width: 280px;
+
+           }
+
+           .main{
+            width: 180px;
+
+           }
+
+           .main__content__line .line .peopleL i{
+            margin-left: -50px;
+           }
+
+
+    }
 
 </style>
 
