@@ -1,7 +1,7 @@
 <?php
 /*
 * Plugin Name: Blood donation
-* Description: Wordpress plugin
+* Description: Wordpress plugin 
 * Version: 1.3
 * Requires PHP: 8.0
 * Author: Rachad A. ADEKAMBI
