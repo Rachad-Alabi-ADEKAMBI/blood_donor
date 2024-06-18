@@ -15,24 +15,18 @@
    cd blood_donor
    ```
 
-2. **Start Your Server**:
+2. **Install the plugin**:
    - **For XAMPP on Linux**:
      ```bash
      sudo /opt/lampp/lampp start
      ```
-   - **For MAMP on macOS**:
-     - Open MAMP application.
-     - Click on "Start Servers."
-   - **For XAMPP on Windows**:
-     - Open XAMPP Control Panel.
-     - Click on "Start" next to Apache and MySQL.
-
+   - **For MAMP on m
 3. **Create a Database and Import SQL File**:
    - Create a new database using phpMyAdmin or a similar tool.
    - Import the SQL file located in the `database` directory.
 
-4. **Access the Project**:
-   - Open your browser and go to [https://127.0.0.1/immobilier_benin](https://127.0.0.1/immobilier_benin).
+4. **Access a sample of the project**:
+   - Open your browser and go to [https://127.0.0.1/blood_donor](https://127.0.0.1/blood_donor).
 
 The project should now be running!
 
