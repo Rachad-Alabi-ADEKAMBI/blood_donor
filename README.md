@@ -1,8 +1,9 @@
 ## Blood donor
-### Developer Information
 - **plugin name Name**:Blood donor
-- **Website URL**: [https://immobilierbenin.com](https://immobilierbenin.com)
-- **About**: Marketplace for real estate business ads
+- **plugin URL**: [https://blood_donor.com](https://blood_donor.com)
+- **About**: Simple blood donor app
+
+### Developer Information
 - **Developer Name**: Codeur Creatif
 - **Developer Website**: [https://rachad-alabi-adekambi.github.io/portfolio](https://rachad-alabi-adekambi.github.io/portfolio)
 
@@ -10,8 +11,8 @@
 
 1. **Clone the Project**:
    ```bash
-   git clone https://github.com/your-username/immobilier_benin.git
-   cd immobilier_benin
+   git clone https://github.com/Rachad-Alabi-ADEKAMBI/blood_donor.git
+   cd blood_donor
    ```
 
 2. **Start Your Server**:
