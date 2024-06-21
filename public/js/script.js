@@ -1,5 +1,11 @@
-<script>
-        let box = document.getElementById('box');
+ocument.addEventListener('DOMContentLoaded', function() {
+    alert('ok');
+    // Your other JavaScript code here
+});
+
+
+  
+  let box = document.getElementById('box');
         let main_line = document.getElementById('main_line');
         let size = document.getElementById('size');
 
@@ -242,4 +248,3 @@
             document.getElementById('case7').className = 'case';
             document.getElementById('case8').className = 'light';
         }
-</script>
