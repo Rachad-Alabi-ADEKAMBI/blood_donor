@@ -1,7 +1,7 @@
 <?php
 /*
-* Plugin Name: Blood donation
-* Description: Wordpress plugin 
+* Plugin Name: Blood donor
+* Description: Select your blood group and find out which one you can donate blood to
 * Version: 1.3
 * Requires PHP: 8.0
 * Author: Rachad A. ADEKAMBI
