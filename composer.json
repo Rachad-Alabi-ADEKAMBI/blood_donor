@@ -1,0 +1,17 @@
+{
+    "name": "blooddonor/bloodonor",
+    "description": "This handy plugin helps you find out which blood types you can donate to, based on your blood type. Just select your blood group, and we'll do the rest!",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "Blooddonor\\Bloodonor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rachad-Alabi-ADEKAMBI",
+            "email": "adekambirachad@gmail.com"
+        }
+    ],
+    "require": {}
+}
